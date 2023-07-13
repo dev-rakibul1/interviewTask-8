@@ -1,0 +1,112 @@
+/*! HTML5 Boilerplate version 1.0.0 | MIT License | It's free and comfort usable */
+
+/* reset.css 1.0.0 | RAKIBUL ISLAM
+/*
+ *It's default CSS use in website and cross-browser styling. This code collects in
+  HTML5 and CSS3 this class flowing and create a website in a simple time!
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*
+ * div default margin and padding none 
+ */
+
+html,
+body {
+  background-color: #ddd;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Container */
+/* -------------------------------------------------------------------------- */
+.theme-container {
+  width: 576px;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+ * Remove the margin and padding in all browsers.
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+input[type="date"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #a1a1a1; /* Desired placeholder color */
+}
+textarea:focus {
+  outline: none; /* Optional: Remove the outline when the textarea is focused */
+}
+textarea {
+  border: 1px solid #ddd;
+}
+
+/*
+* Customize the background color to match your design.
+*/
+
+.common-btn {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ddd;
+  cursor: pointer !important;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.common-btn:hover {
+  background-color: #cfcfcf;
+  cursor: pointer;
+}
+
+/* footer social */
+.footer-social {
+  width: 100%;
+  padding: 15px 0;
+  padding-top: 25px;
+}
+.footer-social .footer-social-icon-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social .footer-social-icon-wrap li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-social .footer-social-icon-wrap li:hover {
+  border: 1px solid #333;
+}
+.footer-social .footer-social-icon-wrap li a {
+  font-size: 25px;
+  color: #929292;
+}
+
+/* ===================================0END0==================================== */

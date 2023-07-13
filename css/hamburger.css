@@ -1,0 +1,53 @@
+.off-canvas-menu {
+  position: relative;
+}
+.off-canvas-menu ul li {
+  list-style-type: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.off-canvas-menu ul li a i {
+  margin-right: 20px;
+}
+
+.off-canvas-menu ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.off-canvas-menu ul li a:hover {
+  color: #afafaf;
+}
+
+.off-canvas-menu {
+  position: absolute;
+  top: 0;
+  left: -99px;
+  width: 75%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 75%);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  transform: translateX(0);
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.hamburger-trigger {
+  left: 0 !important;
+  transform: translateX(1);
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+
+.off-canvas-menu-logo img {
+  width: 150px;
+}

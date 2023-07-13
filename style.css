@@ -1,0 +1,252 @@
+/*
+  Theme Name: Default :
+  Author: 
+  Support: fl.rakibul@gmail.com
+  Description: This template is stack and coding style fully handle.
+  Version: 1.0.0
+*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+/*
+* font linking google font or others fonts
+*/
+
+/* -------------------------------------------------------------------------- */
+
+/* Google fonts calling */
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* -------------------------------------------------------------------------- */
+@import url("css/font-awesome.css");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+/* login page style */
+.login {
+  background-color: #fff;
+  height: 100vh;
+  height: 100%;
+}
+
+.login-top-banner {
+  border-radius: 0 0 20px 20px;
+  background-color: #05448d;
+}
+.login-details {
+  margin-top: 70px;
+}
+
+.login-details input {
+  border: 1px solid #ddd;
+}
+
+.login-article h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: -2px;
+}
+
+.login-btn {
+  background: #ddd;
+  cursor: pointer !important;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #cfcfcf;
+}
+
+.login-details span {
+  width: 50px;
+  height: 55px;
+}
+
+.login-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100% !important;
+  background: #ddd;
+}
+
+.forgot-password {
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.back-btn {
+  width: 50px;
+  height: 50px;
+  cursor: pointer !important;
+}
+
+/* OTP style */
+/* otp fields */
+
+.login-article p {
+  color: #333;
+}
+.cancel-trip-time p,
+.trip-history-article p {
+  margin: 0;
+  padding: 0;
+  list-style: 24px;
+  color: #333;
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.otp-fields {
+  max-width: 100%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.otp-time a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* customer history */
+/* customer profile image */
+
+.customer-profile img {
+  max-width: 100%;
+  width: 50px;
+}
+
+.customer-profile span {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.top-banner-pointer {
+  cursor: pointer;
+}
+
+.history-details .history-icon i {
+  font-size: 25px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 10px;
+}
+.history-details {
+  width: 100%;
+}
+
+.history-details h4 {
+  font-size: 18px;
+}
+
+.history-details-box {
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  cursor: pointer !important;
+  transition: 0.3s;
+}
+
+.history-details-box:hover {
+  background-color: #ddd;
+  margin-left: 3px;
+  border-radius: 10px;
+}
+
+/* package-rent */
+.package-rent-wrap {
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.package-rent-wrap:hover {
+  margin-left: 3px;
+}
+
+.package-rent img {
+  max-width: 100%;
+  width: 100px;
+}
+
+.package-rent-article {
+  margin-left: 15px;
+}
+
+.package-rent-article h5 {
+  font-size: 18px;
+}
+
+/* package-rent-car */
+
+.package-rent-car img {
+  max-width: 100%;
+  width: 120px;
+  margin-right: 10px;
+}
+
+.package-rent-car h4 {
+  font-size: 18px;
+}
+
+.car-edit-info {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ddd;
+  cursor: pointer !important;
+  padding: 15px;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.car-edit-info:hover {
+  background-color: #cfcfcf;
+  cursor: pointer;
+}
+
+.user-info-text p strong {
+  margin-right: 10px;
+}
+
+.day-booking-image img {
+  max-width: 100%;
+  width: 60px;
+  cursor: pointer;
+}
+.fuels h6 {
+  font-weight: 600;
+}
+
+.fuels p {
+  margin-left: 20px;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+
+.booking-day-wrap p {
+  line-height: 18px;
+}
