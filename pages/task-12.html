@@ -29,7 +29,7 @@
   </head>
   <body>
     <div class="theme-container">
-      <div class="position-relative">
+      <div class="position-relative overflow-hidden overly-block">
         <div class="menu-overly"></div>
         <!-- Off canvas menu -->
         <div class="off-canvas-menu">
@@ -98,6 +98,11 @@
             </li>
             <li class="d-flex justify-content-start align-items-center">
               <a href="./task-12.html"
+                ><i class="fa-solid fa-handshake"></i> task-11</a
+              >
+            </li>
+            <li class="d-flex justify-content-start align-items-center">
+              <a href="./task-12.html"
                 ><i class="fa-solid fa-handshake"></i> task-12</a
               >
             </li>
@@ -143,17 +148,19 @@
 
           <!-- login body -->
           <div class="login-details">
+            <!-- back btn -->
+
             <!-- history article -->
             <div
-              class="login-article d-flex justify-content-center align-items-start py-2 px-5 flex-column mb-5"
+              class="login-article d-flex justify-content-center align-items-start py-2 px-5 flex-column"
             >
               <!-- back btn -->
               <div
                 class="d-flex justify-content-between align-items-center h-100 w-100"
               >
                 <div class="">
-                  <h2>Package Rent</h2>
-                  <small>Choose your Location & Time</small>
+                  <h2>Driver offer</h2>
+                  <small>Choose your Car</small>
                 </div>
                 <div
                   class="back-btn d-flex justify-content-start align-items-center"
@@ -164,149 +171,115 @@
                 </div>
               </div>
 
-              <!-- Package Rent -->
-              <div
-                class="package-rent-car d-flex justify-content-between align-items-center w-100 py-4"
-              >
-                <div class="d-flex justify-content-start align-items-start">
-                  <img
-                    src="https://i.ibb.co/N9SD7sn/car.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                  <div class="">
-                    <small>1-4 Seats</small>
-                    <h4>Sedan Car</h4>
+              <!-- history details -->
+              <div class="mt-3 history-details" style="margin-bottom: 50px">
+                <!-- Time over -->
+                <h6 class="text-center display-6 fs-4">Time count down</h6>
+                <div
+                  class="time-over d-flex justify-content-center align-items-center"
+                >
+                  <!-- hours -->
+                  <div class="text-center p-2">
+                    <div class="time-hours">
+                      <span>0</span>
+                      <span>0</span>
+                    </div>
+                    <small class="d-block">Hours</small>
+                  </div>
+                  <!-- minutes -->
+                  <div class="text-center p-2">
+                    <div class="time-minutes">
+                      <span>1</span>
+                      <span>5</span>
+                    </div>
+                    <small class="d-block">Minutes</small>
+                  </div>
+                  <!-- second -->
+                  <div class="text-center p-2">
+                    <div class="time-second">
+                      <span>4</span>
+                      <span>3</span>
+                    </div>
+                    <small class="d-block">Second</small>
                   </div>
                 </div>
-                <button class="car-edit-info">
-                  Edit <i class="fa-solid fa-pen" style="margin-left: 10px"></i>
-                </button>
+
+                <!-- offer details -->
+                <div class="offer-details mt-3">
+                  <p class="d-flex justify-content-start align-items-center">
+                    <strong>
+                      <span>Date: </span>
+                    </strong>
+                    <span>Monday, 15 july, 2023 - 15: 26</span>
+                  </p>
+                  <p class="d-flex justify-content-start align-items-center">
+                    <strong>
+                      <span>Sedan: </span>
+                    </strong>
+                    <span>4 Seats</span>
+                  </p>
+                  <p class="d-flex justify-content-start align-items-center">
+                    <strong>
+                      <span>Start: </span>
+                    </strong>
+                    <span
+                      >Dhaka commerce college, Commerce college road, Dhaka,
+                      Bangladesh</span
+                    >
+                  </p>
+                  <p class="d-flex justify-content-start align-items-center">
+                    <strong><span>End: </span></strong>
+                    <span>Rajshahi University, Rajshahi, Bangladesh</span>
+                  </p>
+                  <p class="d-flex justify-content-start align-items-center">
+                    <strong>
+                      <span>Offer Price: </span>
+                    </strong>
+                    <span>10000.00 TK</span>
+                  </p>
+
+                  <!-- confirm order -->
+                  <div class="confirm-order mt-5">
+                    <div class="row -4 text-center">
+                      <div class="col-6">
+                        <h6 class="text-body fs-6">Cedric Hebert</h6>
+                        <span>01744-45884</span>
+                      </div>
+                      <div class="col-6">
+                        <h6 class="text-body fs-6">Offer price</h6>
+                        <span>10000.00 Tk</span>
+                      </div>
+                    </div>
+                    <button class="common-btn mt-2 my-3">Confirm order</button>
+                  </div>
+
+                  <div class="emergency-contact mt-4">
+                    <p class="d-flex justify-content-start align-items-center">
+                      <strong>
+                        <span>Hailee Emmerich: </span>
+                      </strong>
+                      <a href="tel:01964-545144 " class="text-decoration-none"
+                        >01964-545144
+                      </a>
+                    </p>
+                  </div>
+
+                  <p class="my-3 mb-5">
+                    <strong class="py-2 d-inline-block">
+                      <span>Location start point and end point: </span></strong
+                    >
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.86600308164!2d90.25446688676529!3d23.78086318907288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1690454493397!5m2!1sen!2sbd"
+                      width="100%"
+                      height="300"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </p>
+                </div>
               </div>
-              <!-- Package Rent details -->
-              <div class="w-100" style="margin-bottom: 50px">
-                <form class="w-100 z-0">
-                  <!-- Point 01 -->
-                  <div
-                    class="d-sm-flex justify-content-start align-items-center w-100"
-                  >
-                    <label for="point-1" class="w-25">Start point:</label>
-                    <div
-                      class="mb-3 position-relative overflow-hidden d-flex rounded-3 w-100"
-                    >
-                      <input
-                        type="text"
-                        placeholder="Search locations"
-                        required
-                        class="w-100 p-3 rounded-3"
-                        id="point-1"
-                      />
-                      <div class="login-icon h-75">
-                        <span
-                          class="d-flex justify-content-center align-items-center"
-                          ><i class="fa-solid fa-location-dot"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Point 02 -->
-                  <div
-                    class="d-sm-flex justify-content-start align-items-center w-100"
-                  >
-                    <label for="point-2" class="w-25">Via Point :</label>
-                    <div
-                      class="mb-3 position-relative overflow-hidden d-flex rounded-3 w-100"
-                    >
-                      <input
-                        type="text"
-                        placeholder="Via locations"
-                        required
-                        class="w-100 p-3 rounded-3"
-                        id="point-2"
-                      />
-                      <div class="login-icon h-75">
-                        <span
-                          class="d-flex justify-content-center align-items-center"
-                          ><i class="fa-brands fa-viacoin"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Point 03 -->
-                  <div
-                    class="d-sm-flex justify-content-start align-items-center w-100"
-                  >
-                    <label for="point-3" class="w-25">End point:</label>
-                    <div
-                      class="mb-3 position-relative overflow-hidden d-flex rounded-3 w-100"
-                    >
-                      <input
-                        type="text"
-                        placeholder="Search locations"
-                        required
-                        class="w-100 p-3 rounded-3"
-                        id="point-3"
-                      />
-                      <div class="login-icon h-75">
-                        <span
-                          class="d-flex justify-content-center align-items-center"
-                          ><i class="fa-solid fa-arrow-trend-down"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- time and date -->
-                  <!-- Point 04 -->
-                  <div
-                    class="d-sm-flex justify-content-start align-items-center w-100"
-                  >
-                    <label for="point-4" class="w-25"
-                      >Select Date & Time:</label
-                    >
-                    <div
-                      class="mb-3 position-relative overflow-hidden d-flex rounded-3 w-100"
-                    >
-                      <input
-                        type="date"
-                        placeholder="Search locations"
-                        required
-                        class="w-100 p-3 rounded-3"
-                        id="point-4"
-                      />
-                      <div class="login-icon h-75">
-                        <span
-                          class="d-flex justify-content-center align-items-center"
-                          ><i class="fa-solid fa-calendar-days"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- message -->
-                  <textarea
-                    name="myTextarea"
-                    rows="4"
-                    cols="50"
-                    class="w-100 p-2"
-                    placeholder="Add a note"
-                  ></textarea>
-
-                  <button
-                    class="login-btn btn w-100 bg-gray-300 mt-3"
-                    type="submit"
-                  >
-                    Review Request
-                  </button>
-                  <button
-                    class="login-btn btn w-100 bg-gray-300 mt-3"
-                    type="submit"
-                  >
-                    Confirm request
-                  </button>
-                </form>
-              </div>
-
               <!-- footer -->
               <div class="footer-social">
                 <ul class="footer-social-icon-wrap">

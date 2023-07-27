@@ -37,7 +37,10 @@ body {
   padding: 0;
   margin: 0;
 }
+
+input[type="datetime-local"]:focus,
 input[type="date"]:focus,
+input[type="number"]:focus,
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
@@ -54,6 +57,47 @@ textarea {
   border: 1px solid #ddd;
 }
 
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Customize the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+strong {
+  font-size: 13px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: rgb(147, 250, 250);
+  color: #000;
+}
+
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-link.active:hover {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: none;
+  border: none;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
+}
 /*
 * Customize the background color to match your design.
 */
@@ -61,18 +105,20 @@ textarea {
 .common-btn {
   border: none;
   width: 100%;
-  padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   background: #ddd;
   cursor: pointer !important;
-  padding: 15px;
+  padding: 11px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 11px;
+  color: #000;
+  font-size: 15px;
 }
 
 .common-btn:hover {
   background-color: #cfcfcf;
   cursor: pointer;
+  color: #000;
 }
 
 /* footer social */

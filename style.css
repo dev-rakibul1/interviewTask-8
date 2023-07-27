@@ -45,14 +45,14 @@
 
 .login-article h2 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 21px;
   margin-bottom: -2px;
 }
 
 .login-btn {
   background: #ddd;
   cursor: pointer !important;
-  padding: 15px;
+  padding: 11px;
   font-weight: 600;
   font-size: 16px;
 }
@@ -61,9 +61,22 @@
   background-color: #cfcfcf;
 }
 
-.login-details span {
+.login-details .back-btn span {
   width: 50px;
-  height: 55px;
+  height: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #929292;
+  border-radius: 100%;
+  color: #929292;
+  transition: 0.3s;
+}
+
+.login-details span:hover {
+  border: #333;
+  color: #333;
 }
 
 .login-icon {
@@ -73,6 +86,11 @@
   bottom: 0;
   height: 100% !important;
   background: #ddd;
+  width: 50px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .forgot-password {
@@ -81,7 +99,7 @@
   font-weight: 500;
 }
 .back-btn {
-  width: 50px;
+  /* width: 50px; */
   height: 50px;
   cursor: pointer !important;
 }
@@ -134,7 +152,7 @@
 }
 
 .history-details .history-icon i {
-  font-size: 25px;
+  font-size: 16px;
   margin-right: 10px;
   width: 40px;
   height: 40px;
@@ -150,7 +168,7 @@
 }
 
 .history-details h4 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .history-details-box {
@@ -180,6 +198,7 @@
   transition: 0.3s;
   background: #ddd;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .package-rent-wrap:hover {
@@ -191,12 +210,13 @@
   width: 100px;
 }
 
-.package-rent-article {
+/* .package-rent-article {
   margin-left: 15px;
-}
+} */
 
 .package-rent-article h5 {
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* package-rent-car */
@@ -248,7 +268,12 @@
 }
 
 .booking-day-wrap p {
-  line-height: 18px;
+  line-height: 10px;
+  font-size: 13px;
+}
+
+.fuels {
+  margin-top: 30px;
 }
 
 /* car service */
@@ -361,5 +386,42 @@ article ol li {
 .login-top-banner img {
   max-width: 100%;
   width: 55px;
+  margin-right: 10px;
+}
+
+/* time count down style */
+.time-over .time-hours span,
+.time-over .time-minutes span,
+.time-over .time-second span {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #696969;
+  display: inline-block;
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 3px;
+  color: #696969;
+}
+.time-over .time-second,
+.time-over .time-minutes,
+.time-over .time-hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-over small {
+  color: #696969;
+}
+
+.offer-details p {
+  margin-top: -12px;
+}
+
+.offer-details p strong {
   margin-right: 10px;
 }

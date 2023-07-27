@@ -29,7 +29,7 @@
   </head>
   <body>
     <div class="theme-container">
-      <div class="position-relative">
+      <div class="position-relative overflow-hidden overly-block">
         <div class="menu-overly"></div>
         <!-- Off canvas menu -->
         <div class="off-canvas-menu">
@@ -145,15 +145,14 @@
           <div class="login-details">
             <!-- history article -->
             <div
-              class="login-article d-flex justify-content-center align-items-start py-2 px-5 flex-column mb-5"
+              class="login-article d-flex justify-content-center align-items-start py-2 px-5 flex-column"
             >
-              <!-- back btn -->
+              <!-- back btn  -->
               <div
                 class="d-flex justify-content-between align-items-center h-100 w-100"
               >
                 <div class="">
-                  <h2>Package Rent</h2>
-                  <small>Choose your Location & Time</small>
+                  <h2>Trip history</h2>
                 </div>
                 <div
                   class="back-btn d-flex justify-content-start align-items-center"
@@ -164,145 +163,173 @@
                 </div>
               </div>
 
-              <!-- Package Rent -->
+              <!-- trip btn -->
               <div
-                class="package-rent-car d-flex justify-content-between align-items-center w-100 py-4"
+                class="w-100 d-flex justify-content-between align-items-center py-2 row"
               >
-                <div class="d-flex justify-content-start align-items-start">
-                  <img
-                    src="https://i.ibb.co/N9SD7sn/car.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                  <div class="">
-                    <small>1-4 Seats</small>
-                    <h4>Sedan Car</h4>
-                  </div>
-                </div>
-                <button class="car-edit-info">
-                  Edit <i class="fa-solid fa-pen" style="margin-left: 10px"></i>
-                </button>
-              </div>
-              <!-- Package Rent details -->
-              <div class="w-100" style="margin-bottom: 50px">
-                <form class="w-100 z-0">
-                  <!-- Point 01 -->
-                  <div
-                    class="d-sm-flex justify-content-start align-items-center w-100"
-                  >
-                    <label for="point-1" class="w-25">Start point:</label>
-                    <div
-                      class="mb-3 position-relative overflow-hidden d-flex rounded-3 w-100"
-                    >
-                      <input
-                        type="text"
-                        placeholder="Search locations"
-                        required
-                        class="w-100 p-3 rounded-3"
-                        id="point-1"
-                      />
-                      <div class="login-icon h-75">
-                        <span
-                          class="d-flex justify-content-center align-items-center"
-                          ><i class="fa-solid fa-location-dot"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Point 02 -->
-                  <div
-                    class="d-sm-flex justify-content-start align-items-center w-100"
-                  >
-                    <label for="point-2" class="w-25">Via Point :</label>
-                    <div
-                      class="mb-3 position-relative overflow-hidden d-flex rounded-3 w-100"
-                    >
-                      <input
-                        type="text"
-                        placeholder="Via locations"
-                        required
-                        class="w-100 p-3 rounded-3"
-                        id="point-2"
-                      />
-                      <div class="login-icon h-75">
-                        <span
-                          class="d-flex justify-content-center align-items-center"
-                          ><i class="fa-brands fa-viacoin"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Point 03 -->
-                  <div
-                    class="d-sm-flex justify-content-start align-items-center w-100"
-                  >
-                    <label for="point-3" class="w-25">End point:</label>
-                    <div
-                      class="mb-3 position-relative overflow-hidden d-flex rounded-3 w-100"
-                    >
-                      <input
-                        type="text"
-                        placeholder="Search locations"
-                        required
-                        class="w-100 p-3 rounded-3"
-                        id="point-3"
-                      />
-                      <div class="login-icon h-75">
-                        <span
-                          class="d-flex justify-content-center align-items-center"
-                          ><i class="fa-solid fa-arrow-trend-down"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- time and date -->
-                  <!-- Point 04 -->
-                  <div
-                    class="d-sm-flex justify-content-start align-items-center w-100"
-                  >
-                    <label for="point-4" class="w-25"
-                      >Select Date & Time:</label
-                    >
-                    <div
-                      class="mb-3 position-relative overflow-hidden d-flex rounded-3 w-100"
-                    >
-                      <input
-                        type="date"
-                        placeholder="Search locations"
-                        required
-                        class="w-100 p-3 rounded-3"
-                        id="point-4"
-                      />
-                      <div class="login-icon h-75">
-                        <span
-                          class="d-flex justify-content-center align-items-center"
-                          ><i class="fa-solid fa-calendar-days"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- message -->
-                  <textarea
-                    name="myTextarea"
-                    rows="4"
-                    cols="50"
-                    class="w-100 p-2"
-                    placeholder="Add a note"
-                  ></textarea>
-
-                  <button
-                    class="login-btn btn w-100 bg-gray-300 mt-3"
-                    type="submit"
-                  >
-                    Review Request
+                <div class="col-6">
+                  <button class="common-btn my-2 d-inline-block">
+                    Cancel Trip
                   </button>
-                  <button
-                    class="login-btn btn w-100 bg-gray-300 mt-3"
-                    type="submit"
+                </div>
+                <div
+                  class="cancel-trip-time col-6 d-flex justify-content-end align-items-center"
+                >
+                  <p>23 May 2023</p>
+                  <span>-</span>
+                  <p>12:30 PM</p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-center w-100"
+                style="margin-bottom: 90px"
+              >
+                <form class="w-100">
+                  <!--Date time -->
+                  <div
+                    class="mb-3 position-relative overflow-hidden d-flex rounded-3"
                   >
-                    Confirm request
+                    <input
+                      type="datetime-local"
+                      placeholder="Locations"
+                      required
+                      class="w-100 p-3 rounded-3"
+                    />
+                    <div class="login-icon h-75">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-regular fa-calendar-days"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <!--Sedan -->
+                  <div
+                    class="mb-3 position-relative overflow-hidden d-flex rounded-3"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Sedan"
+                      required
+                      class="w-100 p-3 rounded-3"
+                    />
+                    <div class="login-icon h-75">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-car-side"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <!--Start point -->
+                  <div
+                    class="mb-3 position-relative overflow-hidden d-flex rounded-3"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Start point"
+                      required
+                      class="w-100 p-3 rounded-3"
+                    />
+                    <div class="login-icon h-75">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-location-arrow"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <!--End point -->
+                  <div
+                    class="mb-3 position-relative overflow-hidden d-flex rounded-3"
+                  >
+                    <input
+                      type="text"
+                      placeholder="End point"
+                      required
+                      class="w-100 p-3 rounded-3"
+                    />
+                    <div class="login-icon h-75">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-location-pin-lock"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <!--Offer price -->
+                  <div
+                    class="mb-3 position-relative overflow-hidden d-flex rounded-3"
+                  >
+                    <input
+                      type="number"
+                      placeholder="Offer price 1000 Tk"
+                      required
+                      class="w-100 p-3 rounded-3"
+                    />
+                    <div class="login-icon h-75">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-hand-holding-dollar"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <!-- phone number filed -->
+                  <div
+                    class="mb-3 position-relative overflow-hidden d-flex rounded-3"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Locations"
+                      required
+                      class="w-100 p-3 rounded-3"
+                    />
+                    <div class="login-icon h-75">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-location-dot"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <!-- Sub location -->
+                  <div
+                    class="mb-3 position-relative overflow-hidden d-flex rounded-3"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Sub-locations"
+                      required
+                      class="w-100 p-3 rounded-3"
+                    />
+                    <div class="login-icon h-75">
+                      <span
+                        class="d-flex justify-content-center align-items-center"
+                        ><i class="fa-solid fa-map"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <!-- maps -->
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.86600308164!2d90.25446688676529!3d23.78086318907288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1690454493397!5m2!1sen!2sbd"
+                    width="100%"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+
+                  <div class="trip-history-article py-2 text-center">
+                    <p>Sedan Car</p>
+                    <p>1-4 Seats</p>
+                  </div>
+                  <button
+                    class="login-btn btn w-100 bg-gray-300"
+                    type="submit"
+                    class="w-100"
+                  >
+                    Again Bid
                   </button>
                 </form>
               </div>
