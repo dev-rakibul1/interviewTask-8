@@ -187,7 +187,7 @@
 .history-details-box:hover {
   background-color: #ddd;
   margin-left: 3px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* package-rent */
@@ -424,4 +424,25 @@ article ol li {
 
 .offer-details p strong {
   margin-right: 10px;
+}
+
+/* car article */
+article.car-article li {
+  list-style: none;
+}
+
+article.car-article li i {
+  margin-right: 7px;
+  font-size: 14px;
+}
+
+article.car-article li strong {
+  margin-right: 10px;
+}
+
+.car-details-round {
+  border-radius: 5px;
+}
+.map iframe {
+  border-radius: 5px 5px 0 0;
 }
