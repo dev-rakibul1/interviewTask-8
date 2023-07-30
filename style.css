@@ -37,6 +37,7 @@
 }
 .login-details {
   margin-top: 20px;
+  height: 100vh;
 }
 
 .login-details input {
@@ -254,8 +255,12 @@
 
 .day-booking-image img {
   max-width: 100%;
-  width: 60px;
+  width: 133px;
   cursor: pointer;
+}
+
+.car-text-left-space {
+  margin-right: 10px;
 }
 .fuels h6 {
   font-weight: 600;
@@ -272,8 +277,12 @@
   font-size: 13px;
 }
 
-.fuels {
-  margin-top: 30px;
+.fuels li {
+  margin-left: 30px;
+}
+
+.booking-day-wrap i {
+  margin-right: 9px;
 }
 
 /* car service */

@@ -2,6 +2,7 @@
 const offCanvasMenuClick = document.querySelector(".navbar-off-canvas-menu")
 const offCanvasMenu = document.querySelector(".off-canvas-menu")
 const menuOverly = document.querySelector(".menu-overly")
+const clickBtn = document.querySelector('.hamburger');
 
 
 offCanvasMenuClick.addEventListener("click", function () {
@@ -14,3 +15,14 @@ offCanvasMenuClick.addEventListener("click", function () {
     }
 });
 
+
+
+//hamburger menu active
+var hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+    if (hamburger.classList.contains('active')) {
+        hamburger.classList.remove('active');
+    } else {
+        hamburger.classList.add('active');
+    }
+})
