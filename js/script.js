@@ -5,7 +5,7 @@ const menuOverly = document.querySelector(".menu-overly")
 const clickBtn = document.querySelector('.hamburger');
 
 
-offCanvasMenuClick.addEventListener("click", function () {
+clickBtn.addEventListener("click", function () {
     if (offCanvasMenu.classList.contains("hamburger-trigger", "menu-overly-add")) {
         offCanvasMenu.classList.remove("hamburger-trigger");
         menuOverly.classList.remove("menu-overly-add");
