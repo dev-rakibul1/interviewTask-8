@@ -26,3 +26,19 @@ hamburger.addEventListener('click', () => {
         hamburger.classList.add('active');
     }
 })
+
+
+//Pre loader
+document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+            "body").style.visibility = "hidden";
+        document.querySelector(
+            ".loader-parent").style.visibility = "visible";
+    } else {
+        document.querySelector(
+            ".loader-parent").style.display = "none";
+        document.querySelector(
+            "body").style.visibility = "visible";
+    }
+};
