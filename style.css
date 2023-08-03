@@ -28,7 +28,7 @@
 .login {
   background-color: #fff;
   height: 100vh;
-  height: 100%;
+  overflow-y: scroll;
 }
 
 .login-top-banner {
@@ -304,7 +304,7 @@
   border-radius: 20px;
 }
 
-.post-box-items::before {
+/* .post-box-items::before {
   content: "";
   position: absolute;
   top: 0;
@@ -316,7 +316,7 @@
   visibility: hidden;
   opacity: 0;
   border-radius: 15px;
-}
+} */
 
 .post-box .post-box-items,
 .post-box .post-box-items img {
@@ -454,4 +454,23 @@ article.car-article li strong {
 }
 .map iframe {
   border-radius: 5px 5px 0 0;
+}
+
+/* tabs history */
+.tabs-history-list {
+  cursor: pointer;
+}
+.tabs-history-list h5 {
+  font-size: 15px !important;
+  margin: 3px 0;
+  padding: 0;
+}
+
+.tabs-history-list p {
+  font-size: 14px;
+}
+
+.tabs-history-list small {
+  font-size: 12px !important;
+  display: inline-block;
 }

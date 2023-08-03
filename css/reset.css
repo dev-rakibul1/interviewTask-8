@@ -72,6 +72,66 @@ textarea {
   background-color: #888;
 }
 
+/* Hide the default scrollbar for Firefox */
+html {
+  scrollbar-width: none; /* Firefox 64+ */
+}
+
+body {
+  scrollbar-width: none; /* Firefox 64+ */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+::-webkit-scrollbar {
+  display: none;
+  scrollbar-color: transparent transparent;
+}
+
+html {
+  scrollbar-width: none;
+}
+@-moz-document url-prefix() {
+  html,
+  body {
+    overflow: hidden !important;
+  }
+}
+
+body {
+  -ms-overflow-style: none; /** For IE */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@-moz-document url-prefix() {
+  html,
+  body {
+    scrollbar-width: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+}
+
+/* Hide the default scrollbar for Internet Explorer */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Customize the scrollbar track */
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Customize the scrollbar thumb (the draggable handle) */
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
 strong {
   font-size: 13px;
 }
