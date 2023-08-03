@@ -352,6 +352,16 @@
   padding: 10px;
 }
 
+.post-box-items h4 {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.blog-images-title {
+  font-size: 1vw !important;
+  padding: 5px;
+}
+
 .post-box .post-box-items:hover .blog-hover-article p {
   width: 25px;
   height: 25px;
