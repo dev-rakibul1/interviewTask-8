@@ -42,3 +42,82 @@ document.onreadystatechange = function () {
             "body").style.visibility = "visible";
     }
 };
+
+
+// Time count down
+function countdownTimer(endTime) {
+    const hoursOne = document.getElementById("hours-1");
+    const hoursTwo = document.getElementById("hours-2");
+    const minutesOne = document.getElementById("minutes-1");
+    const minutesTwo = document.getElementById("minutes-2");
+    const secondsOne = document.getElementById("seconds-1");
+    const secondsTwo = document.getElementById("seconds-2");
+    const timeCountDown = document.getElementById("time-count-down");
+
+    const intervalId = setInterval(updateTime, 1000);
+
+    function updateTime() {
+        const currentTime = new Date().getTime();
+        const timeRemaining = endTime - currentTime;
+
+        if (timeRemaining <= 0) {
+            clearInterval(intervalId);
+            hoursOne.textContent = "0";
+            hoursTwo.textContent = "0";
+            minutesOne.textContent = "0";
+            minutesTwo.textContent = "0";
+            secondsOne.textContent = "0";
+            secondsTwo.textContent = "0";
+
+            if (hoursOne.textContent == "0" &&
+                hoursTwo.textContent == "0" &&
+                minutesOne.textContent == "0" &&
+                minutesTwo.textContent == "0" &&
+                secondsOne.textContent == "0" &&
+                secondsTwo.textContent == "0") {
+                timeCountDown.innerText = "Time is over"
+            }
+            return;
+        }
+
+        const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+        const minutes = Math.floor(
+            (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        // Split digits into an array
+        const hoursArray = String(hours)
+            .padStart(2, "0")
+            .split("")
+            .map(Number);
+        const minutesArray = String(minutes)
+            .padStart(2, "0")
+            .split("")
+            .map(Number);
+        const secondsArray = String(seconds)
+            .padStart(2, "0")
+            .split("")
+            .map(Number);
+
+        // Update UI with the time
+        hoursOne.textContent = hoursArray[0];
+        hoursTwo.textContent = hoursArray[1];
+        minutesOne.textContent = minutesArray[0];
+        minutesTwo.textContent = minutesArray[1];
+        secondsOne.textContent = secondsArray[0];
+        secondsTwo.textContent = secondsArray[1];
+    }
+
+    // Initial update
+    updateTime();
+}
+
+
+// Set the end time (e.g., 100520-000000)
+const endTime = new Date("2023-10-01T00:00:00").getTime();
+const targetTime = endTime - 60 * 1000;
+countdownTimer(targetTime);
+
+
+

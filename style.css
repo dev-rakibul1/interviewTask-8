@@ -36,7 +36,7 @@
   background-color: #05448d;
 }
 .login-details {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .login-details input {
@@ -352,8 +352,8 @@
   padding: 10px;
 }
 
-.post-box-items h4 {
-  font-size: 18px;
+.post-box-items h6 {
+  font-size: 16px;
   padding: 5px;
 }
 
