@@ -34,7 +34,6 @@ menuOverly.addEventListener('click', () => {
         offCanvasMenu.classList.remove("hamburger-trigger");
     }
 })
-
 menuOverly.addEventListener('click', () => {
     if (hamburger.classList.contains('active')) {
         hamburger.classList.remove('active');
