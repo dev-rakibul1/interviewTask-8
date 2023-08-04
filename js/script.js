@@ -27,6 +27,23 @@ hamburger.addEventListener('click', () => {
     }
 })
 
+// menu overly remove
+menuOverly.addEventListener('click', () => {
+    if (menuOverly.classList.contains('menu-overly-add')) {
+        menuOverly.classList.remove('menu-overly-add');
+        offCanvasMenu.classList.remove("hamburger-trigger");
+    }
+})
+
+menuOverly.addEventListener('click', () => {
+    if (hamburger.classList.contains('active')) {
+        hamburger.classList.remove('active');
+    }
+})
+
+
+
+
 
 //Pre loader
 document.onreadystatechange = function () {
@@ -81,9 +98,7 @@ function countdownTimer(endTime) {
         }
 
         const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
-        const minutes = Math.floor(
-            (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
-        );
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
         // Split digits into an array
@@ -116,7 +131,7 @@ function countdownTimer(endTime) {
 
 // Set the end time (e.g., 100520-000000)
 const endTime = new Date("2023-10-01T00:00:00").getTime();
-const targetTime = endTime - 60 * 1000;
+const targetTime = endTime - 15 * 60 * 1000;
 countdownTimer(targetTime);
 
 

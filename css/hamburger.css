@@ -37,7 +37,11 @@
   transition: 0.5s;
   opacity: 0;
   visibility: hidden;
-  z-index: 1;
+  z-index: 6;
+}
+
+.hamburger-wrap {
+  z-index: 6;
 }
 
 .hamburger-trigger {
