@@ -222,6 +222,16 @@ strong {
     transform: rotate(360deg);
   }
 }
+.simplepicker-btn {
+  border: none;
+  font-size: 18px;
+  color: #000;
+}
+.simplepicker-btn:active,
+.simplepicker-btn:hover {
+  background-color: transparent !important;
+  color: #000;
+}
 
 /* footer social */
 .footer-fixed {
@@ -289,6 +299,83 @@ strong {
   position: absolute;
   opacity: 0.5;
   visibility: visible;
+}
+
+/* flat date time picker */
+
+.flatpickr-calendar {
+  background: #fff;
+  color: #fff !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.dayContainer span {
+  color: #;
+}
+
+.flatpickr-innerContainer {
+  margin-top: 50px;
+}
+
+.flatpickr-months {
+  /* margin: 20px 0 !important; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #8783c0;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+  position: inherit !important;
+  top: 0;
+  height: 34px;
+  padding: 10px;
+  z-index: 3;
+  color: rgba(0, 0, 0, 0.9);
+  fill: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flatpickr-current-month {
+  font-size: 135%;
+  line-height: inherit;
+  font-weight: 300;
+  color: inherit;
+  position: absolute;
+  width: 75%;
+  left: 12.5%;
+  padding: 0 !important;
+  line-height: 1;
+  height: 34px;
+  display: inline-block;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.flatpickr-time {
+  background: #8783c0;
+  color: #fff;
+  margin-top: 16px;
 }
 
 /* ===================================0END0==================================== */

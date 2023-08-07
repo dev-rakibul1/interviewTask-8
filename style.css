@@ -36,7 +36,7 @@
   background-color: #05448d;
 }
 .login-details {
-  /* margin-top: 20px; */
+  margin-top: 5px;
 }
 
 .login-details input {
@@ -438,13 +438,22 @@ article ol li {
 }
 
 .offer-details p {
-  margin-top: -12px;
+  /* margin-top: -12px; */
+  /* border-bottom: 1px solid #dadada; */
+  /* padding: 10px 0; */
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.offer-details p i {
+  color: gray;
 }
 
 .offer-details p strong {
   margin-right: 10px;
+  margin-left: 10px;
 }
-
 /* car article */
 article.car-article li {
   list-style: none;

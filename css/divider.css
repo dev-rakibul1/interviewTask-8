@@ -1,0 +1,97 @@
+.divider-wrap {
+  margin-top: 40px;
+}
+.divider-wrap p {
+  font-size: 17px;
+  color: #636363;
+}
+.divider-wrap a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.divider {
+  display: flex;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+}
+
+.line {
+  align-items: center;
+  margin: 1em -1em;
+}
+
+.divider::before,
+.divider::after {
+  height: 1px;
+  margin: 0 1em;
+}
+
+.one-line::before,
+.one-line::after {
+  background: #8d8d8d;
+}
+
+.razor::before,
+.razor::after {
+  /* box-shadow: 0 0.5px 0 black; */
+  /* border-bottom: 0.5px solid black;  */
+}
+
+.razor::before,
+.razor::after {
+  height: 3px;
+  box-shadow: 0 -0.5px 0 black, 0 0.5px 0 black;
+  /* border: solid black;  */
+  border-width: 0;
+}
+
+.grow::before,
+.grow::after {
+  height: 6px;
+  -webkit-filter: blur(5px);
+  border-radius: 5px;
+}
+.grow::before {
+  background: linear-gradient(to right, blue, hotpink);
+}
+.grow::after {
+  background: linear-gradient(to left, blue, hotpink);
+}
+
+.gradient {
+  align-items: stretch;
+  margin: 1em 0;
+  height: 2em;
+  line-height: 2em;
+  color: white;
+  background: black;
+}
+
+.gradient::before {
+  background: linear-gradient(to right, white, black);
+}
+.gradient::after {
+  background: linear-gradient(to left, white, black);
+}
+
+.donotcross {
+  overflow: hidden;
+  align-items: center;
+  background: hsl(50, 100%, 50%);
+  color: black;
+  height: 2em;
+  line-height: 2em;
+}
+
+.donotcross::before,
+.donotcross::after {
+  background: white;
+  padding: 50px 0;
+  height: 0;
+  transform: rotate(45deg);
+}
