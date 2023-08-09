@@ -287,20 +287,61 @@
 
 /* car service */
 .car-service-box {
-  background-color: #ddd;
   padding: 15px;
-  border-radius: 20px 20px 0 0;
   cursor: pointer;
+  z-index: -5;
 }
 .car-service-box-border img,
 .car-service-box img {
   width: 70px;
 }
 
+/* car-service-box-border css animation border */
+.car-border-animation {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+.car-border-animation::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(transparent, transparent);
+  animation: animate 1.5s linear infinite;
+  width: 120%;
+  height: 50%;
+  left: -29px;
+  right: 0;
+  top: 27%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.car-border-animation::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  inset: 4px;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.car-border-animation:hover::before {
+  background: linear-gradient(#00ccff, #d400d4);
+}
+
 .car-service-box-border {
-  background-color: #ddd;
   padding: 15px;
-  border-radius: 0 0 20px 20px;
   margin-top: 23px;
   cursor: pointer;
 }
