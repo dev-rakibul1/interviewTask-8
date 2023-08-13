@@ -19,16 +19,22 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!-- Date picker -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <!-- reset css -->
-    <link rel="stylesheet" href="./css/reset.css" />
-
-    <!-- divider -->
-    <link rel="stylesheet" href="./css/divider.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
 
     <!-- main css -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <!-- hamburger menu -->
-    <link rel="stylesheet" href="./css/hamburger.css" />
+    <link rel="stylesheet" href="../css/hamburger.css" />
+    <!-- car list -->
+    <link rel="stylesheet" href="../css/car-list.css" />
+    <!-- issue car -->
+    <link rel="stylesheet" href="../css/issue-car.css" />
   </head>
   <body>
     <div class="theme-container">
@@ -47,85 +53,80 @@
           </div>
           <ul>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+              <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-2.html"
+              <a href="./task-2.html"
                 ><i class="fa-solid fa-calendar-week"></i> Task-2</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-3.html"
+              <a href="./task-3.html"
                 ><i class="fa-solid fa-wrench"></i> Task-3</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-4.html"
+              <a href="./task-4.html"
                 ><i class="fa-solid fa-arrow-up-right-dots"></i> Task-4</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-5.html"
+              <a href="./task-5.html"
                 ><i class="fa-solid fa-hand-holding-heart"></i> task-5</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-6.html"
+              <a href="./task-6.html"
                 ><i class="fa-solid fa-handshake"></i> task-6</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-7.html"
+              <a href="./task-7.html"
                 ><i class="fa-solid fa-handshake"></i> task-7</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-8.html"
+              <a href="./task-8.html"
                 ><i class="fa-solid fa-handshake"></i> task-8</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-9.html"
+              <a href="./task-9.html"
                 ><i class="fa-solid fa-handshake"></i> task-9</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-10.html"
+              <a href="./task-10.html"
                 ><i class="fa-solid fa-handshake"></i> task-10</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-11.html"
+              <a href="./task-11.html"
                 ><i class="fa-solid fa-handshake"></i> task-11</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-12.html"
+              <a href="./task-12.html"
                 ><i class="fa-solid fa-handshake"></i> task-12</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-13.html"
+              <a href="./task-13.html"
                 ><i class="fa-solid fa-handshake"></i> task-13</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/task-14.html"
+              <a href="./task-14.html"
                 ><i class="fa-solid fa-handshake"></i> task-14</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/profile.html"
+              <a href="./profile.html"
                 ><i class="fa-solid fa-handshake"></i> Profile</a
               >
             </li>
             <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/car-list.html"
-                ><i class="fa-solid fa-handshake"></i> Listing car</a
-              >
-            </li>
-            <li class="d-flex justify-content-start align-items-center">
-              <a href="./pages/candidate-list.html"
+              <a href="./candidate-list.html"
                 ><i class="fa-solid fa-handshake"></i> Candidate list</a
               >
             </li>
@@ -138,9 +139,24 @@
           <div class="login-top-banner p-4">
             <div class="row">
               <div class="col-10 d-flex justify-content-start">
-                <div class="d-flex justify-content-start align-items-center">
-                  <img src="./images/logo//logo-1.png" alt="logo" />
-                  <h3 class="fs-5 text-white">MuthoCar</h3>
+                <div
+                  class="d-flex justify-content-start align-items-center fs-5"
+                >
+                  <div
+                    class="text-white d-flex justify-content-center align-items-center"
+                  >
+                    <!-- back btn -->
+                    <a href="./task-9.html">
+                      <div
+                        class="back-btn d-flex justify-content-start align-items-center px-3 text-white"
+                      >
+                        <span class="50 pointer-event"
+                          ><i class="fa-solid fa-arrow-left"></i
+                        ></span>
+                      </div>
+                    </a>
+                    <span class="text-capitalize">Hire car expert </span>
+                  </div>
                 </div>
               </div>
               <div
@@ -161,105 +177,120 @@
             </div>
           </div>
 
-          <!-- login body -->
-          <div class="login-details pb-5">
-            <!-- back btn -->
-            <div
-              class="back-btn d-flex justify-content-start align-items-center px-5"
-            >
-              <span class="50 pointer-event"
-                ><i class="fa-solid fa-arrow-left"></i
-              ></span>
-              <span class="ml-1">login</span>
-            </div>
-
-            <!-- login article -->
-            <div
-              class="login-article d-flex justify-content-center align-items-start py-4 px-5 flex-column"
-            >
-              <h2>Login</h2>
-              <p>Please login and continue</p>
-            </div>
-            <div class="d-flex justify-content-center">
-              <form class="px-5 w-100">
-                <!-- phone number filed -->
+          <!-- service -->
+          <div class="py-4 px-4" style="margin-bottom: 70px">
+            <div class="car-issue">
+              <form class="w-100">
+                <!-- car model -->
                 <div
                   class="mb-3 position-relative overflow-hidden d-flex rounded-3"
                 >
                   <input
                     type="text"
-                    placeholder="Phone number"
+                    placeholder="Car Model"
                     required
                     class="w-100 p-3 rounded-3"
                   />
                   <div class="login-icon h-75">
                     <span
                       class="d-flex justify-content-center align-items-center"
-                      ><i class="fa-solid fa-phone-flip"></i
+                      ><i class="fa-solid fa-car-side"></i
                     ></span>
                   </div>
                 </div>
+
+                <!-- Select time -->
                 <div
                   class="mb-3 position-relative overflow-hidden d-flex rounded-3"
                 >
                   <input
-                    type="password"
-                    placeholder="Password"
+                    type="text"
+                    placeholder="Location "
                     required
                     class="w-100 p-3 rounded-3"
                   />
                   <div class="login-icon h-75">
                     <span
                       class="d-flex justify-content-center align-items-center"
-                      ><i class="fa-regular fa-eye"></i
+                      ><i class="fa-solid fa-location-dot"></i
                     ></span>
                   </div>
                 </div>
-                <p class="text-end forgot-password">Forgot password?</p>
+
+                <!-- issues select options -->
+                <!-- type input -->
+                <div class="">
+                  <h4 class="fs-5">Select Catagories</h4>
+                  <div class="autocomplete">
+                    <input
+                      type="text"
+                      id="autocompleteInput"
+                      placeholder="Select..."
+                    />
+                    <div class="options-icons">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div class="autocomplete-add autocomplete-items">
+                      <div>I don't know the category</div>
+                      <div>Engine</div>
+                      <div>Brake/Clutch</div>
+                      <div>Engine Oil</div>
+                      <div>Fuel</div>
+                      <div>Tyre and Wheels</div>
+                      <div>Electric</div>
+                      <div>Exterior Body</div>
+                      <div>Transmission</div>
+                    </div>
+                  </div>
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  class="w-100 p-2 mt-4"
+                  rows="5"
+                  placeholder="Write your vehicle issues"
+                ></textarea>
+
                 <button
-                  class="login-btn btn w-100 bg-gray-300 mt-2"
+                  class="login-btn btn w-100 bg-gray-300"
                   type="submit"
+                  class="w-100"
                 >
-                  Login
+                  Submit issue
                 </button>
               </form>
             </div>
-            <div class="divider-wrap px-5 text-center">
-              <span class="divider line one-line" contenteditable>OR</span>
 
-              <p>I have no account <a href="#">register</a></p>
-            </div>
-
-            <div class="other-login-btn px-5 mt-4">
-              <!-- google login btn -->
-              <a href="#">
-                <button
-                  class="common-btn d-flex justify-content-center align-items-center"
-                >
-                  <img src="./images//icon/google.png" alt="img-fluid" />
-                  <span> Continue with Google</span>
-                </button>
-              </a>
-
-              <!-- apple login btn -->
-              <a href="#">
-                <button
-                  class="mt-3 common-btn d-flex justify-content-center align-items-center"
-                >
-                  <img src="./images//icon/apple-logo.png" alt="img-fluid" />
-                  <span> Continue with Apple</span>
-                </button>
-              </a>
-
-              <!-- facebook login btn -->
-              <a href="#">
-                <button
-                  class="mt-3 common-btn d-flex justify-content-center align-items-center"
-                >
-                  <img src="./images//icon/facebook.png" alt="img-fluid" />
-                  <span> Continue with Facebook</span>
-                </button>
-              </a>
+            <!-- footer -->
+            <div class="footer-social">
+              <ul class="footer-social-icon-wrap">
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-user-plus"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -270,6 +301,8 @@
     <div class="loader-parent">
       <div class="loader"></div>
     </div>
+
+    <div class="options-overly"></div>
 
     <!-- Bootstrap JS CDN calling -->
     <script
@@ -282,11 +315,12 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- our script -->
-    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="../js/selectOptions.js"></script>
+
+    <!-- our script -->
+    <script src="../js/script.js"></script>
   </body>
 </html>

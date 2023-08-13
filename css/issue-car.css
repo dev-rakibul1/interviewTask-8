@@ -1,0 +1,196 @@
+.car-issue input {
+  border: 1px solid #ddd;
+}
+
+.car-issue input[type="text"] {
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+}
+
+.car-issue-table-row {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+th.car-issue-name {
+  font-weight: 400;
+}
+
+.table {
+  border: none;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: none;
+  border-style: none;
+  border-width: 0;
+}
+
+th:last-child,
+td:last-child {
+  margin-left: 50px;
+}
+
+/* ========================== */
+
+select {
+  background-color: white;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23424242%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 10px 30px 10px 10px;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+/* styles for this pen, just to
+make this page look nice. */
+
+.card {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* --------------------------- */
+
+.dropdown-btn {
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Custom arrow styling */
+.dropdown-btn::after {
+  content: "\25BC"; /* Unicode arrow-down character */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #3498db;
+}
+
+/* Styling for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Styling for the options inside the dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Apply hover effect to dropdown options */
+.dropdown-content a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Show the dropdown content when the button is clicked */
+.show-dropdown {
+  display: block;
+}
+
+.autocomplete {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Styling for the input field */
+.autocomplete input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styling for the autocomplete dropdown */
+.autocomplete .autocomplete-items {
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: white;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.autocomplete-active {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Styling for the autocomplete items */
+.autocomplete .autocomplete-items div {
+  padding: 1px 10px;
+  cursor: pointer;
+}
+
+/* Highlight the selected item */
+.autocomplete .autocomplete-items div:hover {
+  background-color: #f4f4f4;
+}
+
+.options-overly {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.option-overly-active {
+  opacity: 0;
+  visibility: visible;
+}
+
+.options-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 24px;
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+
+.options-icons-rotated {
+  transform: rotate(-180deg);
+}

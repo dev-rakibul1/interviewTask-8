@@ -77,11 +77,6 @@
   color: #00ccff;
 }
 
-.login-details span:hover {
-  border: #333;
-  color: #333;
-}
-
 .login-icon {
   position: absolute;
   top: 0;
@@ -102,10 +97,13 @@
   font-weight: 500;
 }
 .back-btn {
-  /* width: 50px; */
-  height: 50px;
+  /* height: 50px; */
   cursor: pointer !important;
 }
+
+/* .back-btn:hover {
+  color: #333 !important;
+} */
 
 /* OTP style */
 /* otp fields */

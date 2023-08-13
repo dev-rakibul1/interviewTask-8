@@ -87,6 +87,11 @@ body {
   scrollbar-color: transparent transparent;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 html {
   scrollbar-width: none;
 }
@@ -130,6 +135,98 @@ body::-webkit-scrollbar-track {
 /* Customize the scrollbar thumb (the draggable handle) */
 body::-webkit-scrollbar-thumb {
   background-color: #888;
+}
+
+/* margin and padding */
+.ml-1 {
+  margin-left: 7px;
+}
+.ml-2 {
+  margin-left: 14px;
+}
+
+.ml-3 {
+  margin-left: 21px;
+}
+
+.ml-4 {
+  margin-left: 28px;
+}
+
+.ml-5 {
+  margin-left: 35px;
+}
+
+/* margin-right */
+.mr-1 {
+  margin-right: 7px;
+}
+.mr-2 {
+  margin-right: 14px;
+}
+
+.mr-3 {
+  margin-right: 21px;
+}
+
+.mr-4 {
+  margin-right: 28px;
+}
+
+.mr-5 {
+  margin-right: 35px;
+}
+
+/* padding left */
+.pl-1 {
+  padding-left: 7px;
+}
+.pl-2 {
+  padding-left: 14px;
+}
+
+.pl-3 {
+  padding-left: 21px;
+}
+
+.pl-4 {
+  padding-left: 28px;
+}
+
+.pl-5 {
+  padding-left: 35px;
+}
+
+/* padding right */
+.pr-1 {
+  padding-right: 7px;
+}
+.pr-2 {
+  padding-right: 14px;
+}
+
+.pr-3 {
+  padding-right: 21px;
+}
+
+.pr-4 {
+  padding-right: 28px;
+}
+
+.pr-5 {
+  padding-right: 35px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 strong {
