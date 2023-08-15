@@ -38,6 +38,23 @@ body {
   margin: 0;
 }
 
+/* Override accordion active item border and focus styles */
+.accordion-button:focus {
+  box-shadow: none; /* Remove focus box shadow */
+  border: none; /* Remove border */
+}
+
+/* Override accordion item focused background color */
+.accordion-header:focus {
+  background-color: transparent; /* Set the background color to transparent or the desired value */
+}
+
+.accordion-button:not(.collapsed) {
+  color: initial; /* Reset color */
+  background-color: #ddd; /* Reset background color */
+  box-shadow: none; /* Remove box shadow */
+}
+
 input[type="datetime-local"]:focus,
 input[type="date"]:focus,
 input[type="number"]:focus,
@@ -135,6 +152,15 @@ body::-webkit-scrollbar-track {
 /* Customize the scrollbar thumb (the draggable handle) */
 body::-webkit-scrollbar-thumb {
   background-color: #888;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  list-style: none;
 }
 
 /* margin and padding */

@@ -9,3 +9,13 @@
 .order-list li {
   list-style: circle !important;
 }
+
+.listing-expert-body ul li {
+  list-style-type: none;
+}
+
+.listing-expert-body span {
+  color: #454545;
+  background: #bebebe;
+  cursor: pointer;
+}

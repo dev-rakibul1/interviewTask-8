@@ -1,0 +1,62 @@
+.expert-person-details img {
+  /* width: 150px;
+  height: 120px; */
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.car-repairing-issues ul li,
+.customer-reviews li,
+.expert-details p {
+  color: #707070;
+  font-size: 15px;
+}
+
+.expert-label-image img {
+  width: 19px;
+  opacity: 0.8;
+}
+
+.expert-person-details ul li a,
+.expert-person-details ul li {
+  list-style: none;
+  font-size: 16px;
+  color: #3f3f3f;
+}
+
+.expert-person-details ul li i {
+  font-size: 14px;
+}
+
+.expert-person-details ul {
+  margin: 0;
+  padding: 0;
+}
+
+.customer-reviews span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.customer-reviews span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #3d3b65;
+  margin-right: 10px;
+}
+
+.customer-reviews ul li ul li {
+  color: #001d8f;
+}
+
+.expert-specialist-summary-list li span {
+  background: #ddd;
+  padding: 2px 7px;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 11px;
+}
+.expert-specialist-summary-list li {
+  line-height: 30px;
+}
