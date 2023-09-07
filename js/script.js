@@ -1,8 +1,14 @@
 
+
+
 const offCanvasMenuClick = document.querySelector(".navbar-off-canvas-menu")
 const offCanvasMenu = document.querySelector(".off-canvas-menu")
 const menuOverly = document.querySelector(".menu-overly")
 const clickBtn = document.querySelector('.hamburger');
+const clickSearch = document.querySelector('.muthoCar-header-search');
+const searchOverly = document.querySelector('.search-overly');
+const searchPopup = document.querySelector('.muthoCar-search-popup');
+const searchClose = document.querySelector('.search-close');
 
 
 clickBtn.addEventListener("click", function () {
@@ -59,6 +65,46 @@ document.onreadystatechange = function () {
             "body").style.visibility = "visible";
     }
 };
+
+
+
+
+try {
+    // search click
+    clickSearch.addEventListener("click", function () {
+        if (searchOverly.classList.contains("search-overly-add")) {
+            searchOverly.classList.remove("search-overly-add");
+            searchPopup.classList.remove("muthoCar-search-popup-visible");
+        } else {
+            searchOverly.classList.add("search-overly-add");
+            searchPopup.classList.add("muthoCar-search-popup-visible");
+        }
+    });
+} catch (error) {
+    console.log(error);
+}
+
+// search overly
+searchOverly.addEventListener('click', () => {
+    if (searchPopup.classList.contains('muthoCar-search-popup-visible')) {
+        searchPopup.classList.remove('muthoCar-search-popup-visible');
+        searchOverly.classList.remove("search-overly-add");
+    }
+})
+
+// search overly
+searchClose.addEventListener('click', () => {
+    if (searchPopup.classList.contains('muthoCar-search-popup-visible')) {
+        searchPopup.classList.remove('muthoCar-search-popup-visible');
+        searchOverly.classList.remove("search-overly-add");
+    }
+})
+
+
+
+
+
+
 
 
 // Time count down
@@ -136,5 +182,10 @@ countdownTimer(targetTime);
 
 
 
-// -------------------JAVASCRIPT DATE PICKER----------------------
+
+
+
+
+    // -------------------JAVASCRIPT DATE PICKER----------------------
+
 

@@ -1,0 +1,87 @@
+.muthoCar-search-popup {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5; */
+}
+
+.muthoCar-search-popup {
+  transition: 0.5s;
+  width: 95%;
+  max-width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 40px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.muthoCar-search-popup-visible {
+  visibility: visible;
+  top: 25%;
+  opacity: 1;
+}
+
+.search-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.search-close span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.muthoCar-search-popup-child input {
+  width: 100%;
+  height: 45px;
+  padding: 15px;
+}
+
+.muthoCar-search-popup-child {
+  width: 85%;
+}
+
+.muthoCar-header-user,
+.muthoCar-header-search,
+.muthoCar-header-comment {
+  cursor: pointer;
+}
+
+.muthoCar-tabs {
+  display: flex;
+}
+
+.muthoCar-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.muthoCar-tabs li img {
+  width: 45px;
+  max-width: 100%;
+  height: auto;
+}

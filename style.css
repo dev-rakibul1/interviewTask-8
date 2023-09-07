@@ -616,3 +616,32 @@ article.car-article li strong {
 /* padding: 10px; */
 /* height: 100vh;
 } */
+
+.form-switch .form-check-input {
+  margin-left: 1em;
+}
+
+.form-switch {
+  padding-left: 0em;
+}
+
+.login-icons-size i {
+  font-size: 12px;
+}
+
+.login-icons-size {
+  width: 40px;
+}
+
+.form-check-input {
+  width: 4em !important;
+  height: 1.5em;
+}
+
+.form-switch .form-check-input {
+  margin-left: 1em;
+}
+
+.form-switch {
+  padding-left: 0em;
+}
