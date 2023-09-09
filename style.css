@@ -645,3 +645,53 @@ article.car-article li strong {
 .form-switch {
   padding-left: 0em;
 }
+
+/* package rent 2 */
+.map-position-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.map-position-wrap span:first-child {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 1px solid #848181;
+  border-radius: 100%;
+}
+
+.map-position-wrap span:nth-child(2),
+.map-position-wrap span:nth-child(3),
+.map-position-wrap span:nth-child(4) {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #848181;
+  margin-top: 7px;
+}
+
+.map-position-wrap span:last-child {
+  margin-top: 5px;
+  color: #848181;
+  font-size: 20px;
+}
+
+.login-icon-map-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100% !important;
+  background: #ddd;
+  width: 50px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-icons-size i {
+  font-size: 17px;
+}
