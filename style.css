@@ -617,11 +617,11 @@ article.car-article li strong {
 /* height: 100vh;
 } */
 
-.form-switch .form-check-input {
+.divider-wrap .form-switch .form-check-input {
   margin-left: 1em;
 }
 
-.form-switch {
+.divider-wrap .form-switch {
   padding-left: 0em;
 }
 
@@ -633,16 +633,16 @@ article.car-article li strong {
   width: 40px;
 }
 
-.form-check-input {
+.divider-wrap .form-check-input {
   width: 4em !important;
   height: 1.5em;
 }
 
-.form-switch .form-check-input {
+.divider-wrap .form-switch .form-check-input {
   margin-left: 1em;
 }
 
-.form-switch {
+.divider-wrap .form-switch {
   padding-left: 0em;
 }
 
