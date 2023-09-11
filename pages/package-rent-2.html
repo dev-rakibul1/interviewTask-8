@@ -199,6 +199,13 @@
                     <h4>Sedan Car</h4>
                   </div>
                 </div>
+
+                <!-- edit btn -->
+                <div class="package-rent-edit-btn">
+                  <span class="">
+                    <i class="fa-solid fa-pen"></i>
+                  </span>
+                </div>
               </div>
 
               <!-- Package Rent details -->
@@ -279,13 +286,11 @@
                     <div
                       class="d-sm-flex justify-content-start align-items-center w-100"
                     >
-                      <div
-                        class="w-100 d-sm-flex justify-content-between align-items-center"
-                      >
-                        <div class="">
+                      <div class="w-100">
+                        <div class="w-100">
                           <label for="point-1" class="">Start:</label>
                         </div>
-                        <div class="" style="width: 92%; max-width: 100%">
+                        <div class="w-100">
                           <div
                             class="position-relative overflow-hidden d-flex rounded-3 w-100 justify-content-center align-items-center h-100"
                           >
@@ -309,13 +314,11 @@
                     <div
                       class="d-sm-flex justify-content-start align-items-center w-100 mt-3"
                     >
-                      <div
-                        class="w-100 d-sm-flex justify-content-between align-items-center"
-                      >
+                      <div class="w-100">
                         <div class="">
                           <label for="point-2" class="w-100">End:</label>
                         </div>
-                        <div class="" style="width: 92%; max-width: 100%">
+                        <div class="w-100">
                           <div
                             class="position-relative overflow-hidden d-flex rounded-3 w-100 justify-content-center align-items-center h-100"
                           >
@@ -338,9 +341,7 @@
                   </div>
 
                   <!-- select date and time -->
-                  <div class="date-time">
-                    <h4 class="fs-6 mt-3">Select date & time</h4>
-
+                  <div class="date-time mt-3">
                     <div
                       class="d-flex justify-content-center align-items-center"
                     >
@@ -348,9 +349,12 @@
                       <div
                         class="d-sm-flex justify-content-start align-items-center w-100"
                       >
-                        <div
-                          class="w-100 d-sm-flex justify-content-between align-items-center"
-                        >
+                        <div class="w-100">
+                          <div class="w-100">
+                            <label for="point-1" class="fs-6"
+                              >Select date:</label
+                            >
+                          </div>
                           <div class="w-100">
                             <div
                               class="position-relative overflow-hidden d-flex rounded-3 w-100 justify-content-center align-items-center h-100 package-rent-input"
@@ -380,9 +384,12 @@
                         class="d-sm-flex justify-content-start align-items-center w-100"
                         style="margin-left: -50px"
                       >
-                        <div
-                          class="w-100 d-sm-flex justify-content-between align-items-center"
-                        >
+                        <div class="w-100">
+                          <div class="w-100">
+                            <label for="point-1" class="fs-6"
+                              >Select time:</label
+                            >
+                          </div>
                           <div class="w-100">
                             <div
                               class="position-relative overflow-hidden d-flex rounded-3 w-100 justify-content-center align-items-center h-100 package-rent-input"
@@ -410,14 +417,14 @@
                   </div>
 
                   <!-- divider -->
-                  <div class="divider-wrap text-center">
+                  <div class="divider-wrap text-center mt-3">
                     <span class="divider line one-line">
                       <span class="mr-2"
                         ><i class="fa-solid fa-arrow-rotate-right"></i
                       ></span>
                       <!-- checkbox btn or switch -->
                       <div
-                        class="form-switch form-switch-box py-3 d-flex justify-content-start align-items-center"
+                        class="form-switch form-switch-box d-flex justify-content-start align-items-center"
                       >
                         <label class="" for="toggleSwitch"> Return Trip </label>
                         <input
@@ -430,34 +437,8 @@
                     </span>
                   </div>
 
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                      checked
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
-                    </label>
-                  </div>
-
                   <!-- Estimated price and offer price -->
-                  <div class="estimated-and-offer-price">
-                    <h4 class="fs-6 mt-3">Estimated price and offer price</h4>
-
+                  <div class="estimated-and-offer-price mt-3">
                     <div
                       class="d-flex justify-content-center align-items-center"
                     >
@@ -465,9 +446,12 @@
                       <div
                         class="d-sm-flex justify-content-start align-items-center w-100"
                       >
-                        <div
-                          class="w-100 d-sm-flex justify-content-between align-items-center"
-                        >
+                        <div class="w-100">
+                          <div class="w-100">
+                            <label for="estimated-price" class="fs-6"
+                              >Estimated price:</label
+                            >
+                          </div>
                           <div class="w-100">
                             <div
                               class="position-relative overflow-hidden d-flex rounded-3 w-100 justify-content-center align-items-center h-100 package-rent-input"
@@ -476,7 +460,7 @@
                                 type="text"
                                 placeholder="7,000 Taka"
                                 class="w-100 p-2 rounded-3"
-                                id="date-1"
+                                id="estimated-price"
                                 style="padding-left: 60px !important"
                               />
                               <div
@@ -497,9 +481,12 @@
                         class="d-sm-flex justify-content-start align-items-center w-100"
                         style="margin-left: -50px"
                       >
-                        <div
-                          class="w-100 d-sm-flex justify-content-between align-items-center"
-                        >
+                        <div class="w-100">
+                          <div class="w-100">
+                            <label for="offer-price" class="fs-6"
+                              >Offer price:</label
+                            >
+                          </div>
                           <div class="w-100">
                             <div
                               class="position-relative overflow-hidden d-flex rounded-3 w-100 justify-content-center align-items-center h-100 package-rent-input"
@@ -508,7 +495,7 @@
                                 type="text"
                                 placeholder="6,500 Taka"
                                 class="w-100 p-2 rounded-3"
-                                id="date-1"
+                                id="offer-price"
                                 style="padding-left: 60px !important"
                               />
                               <div

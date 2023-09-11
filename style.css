@@ -695,3 +695,22 @@ article.car-article li strong {
 .login-icons-size i {
   font-size: 17px;
 }
+
+.package-rent-edit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.package-rent-edit-btn span {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #696969;
+  font-size: 15px;
+}
