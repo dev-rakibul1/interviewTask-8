@@ -19,12 +19,13 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-
-    <!-- Date picker -->
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+
+    <!-- Date picker -->
 
     <!-- reset css -->
     <link rel="stylesheet" href="../css/reset.css" />
@@ -207,6 +208,16 @@
                   </span>
                 </div>
               </div>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalScrollable"
+              >
+                Launch demo modal
+              </button>
 
               <!-- Package Rent details -->
               <div class="w-100" style="margin-bottom: 50px">
@@ -437,6 +448,152 @@
                     </span>
                   </div>
 
+                  <!-- check box -->
+                  <div class="">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="">
+                          <!-- check box 01 -->
+                          <div
+                            class="d-flex justify-content-start align-items-center"
+                          >
+                            <span class="package-rent-checkbox"
+                              ><img
+                                src="../images//icon/point.png"
+                                class="img-fluid"
+                                alt=""
+                            /></span>
+                            <div class="form-check ml-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkbox-1"
+                              />
+                              <label class="form-check-label" for="checkbox-1">
+                                Checkbox 1
+                              </label>
+                            </div>
+                          </div>
+                          <!-- check box 02 -->
+                          <div
+                            class="d-flex justify-content-start align-items-center"
+                          >
+                            <span class="package-rent-checkbox"
+                              ><img
+                                src="../images//icon/point.png"
+                                class="img-fluid"
+                                alt=""
+                            /></span>
+                            <div class="form-check ml-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkbox-1"
+                              />
+                              <label class="form-check-label" for="checkbox-1">
+                                Checkbox 2
+                              </label>
+                            </div>
+                          </div>
+                          <!-- check box 03 -->
+                          <div
+                            class="d-flex justify-content-start align-items-center"
+                          >
+                            <span class="package-rent-checkbox"
+                              ><img
+                                src="../images//icon/point.png"
+                                class="img-fluid"
+                                alt=""
+                            /></span>
+                            <div class="form-check ml-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkbox-1"
+                              />
+                              <label class="form-check-label" for="checkbox-1">
+                                Checkbox 3
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="">
+                          <!-- check box 01 -->
+                          <div
+                            class="d-flex justify-content-start align-items-center"
+                          >
+                            <span class="package-rent-checkbox"
+                              ><img
+                                src="../images//icon/point.png"
+                                class="img-fluid"
+                                alt=""
+                            /></span>
+                            <div class="form-check ml-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkbox-1"
+                              />
+                              <label class="form-check-label" for="checkbox-1">
+                                Checkbox 1
+                              </label>
+                            </div>
+                          </div>
+                          <!-- check box 02 -->
+                          <div
+                            class="d-flex justify-content-start align-items-center"
+                          >
+                            <span class="package-rent-checkbox"
+                              ><img
+                                src="../images//icon/point.png"
+                                class="img-fluid"
+                                alt=""
+                            /></span>
+                            <div class="form-check ml-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkbox-1"
+                              />
+                              <label class="form-check-label" for="checkbox-1">
+                                Checkbox 2
+                              </label>
+                            </div>
+                          </div>
+                          <!-- check box 03 -->
+                          <div
+                            class="d-flex justify-content-start align-items-center"
+                          >
+                            <span class="package-rent-checkbox"
+                              ><img
+                                src="../images//icon/point.png"
+                                class="img-fluid"
+                                alt=""
+                            /></span>
+                            <div class="form-check ml-2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="checkbox-1"
+                              />
+                              <label class="form-check-label" for="checkbox-1">
+                                Checkbox 3
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <!-- Estimated price and offer price -->
                   <div class="estimated-and-offer-price mt-3">
                     <div
@@ -566,6 +723,128 @@
               </div>
             </div>
           </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalScrollable"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalScrollableTitle">
+                    See preview
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- login body -->
+                  <div class="">
+                    <article>
+                      <ul class="package-rent-user-data">
+                        <!--Locations  -->
+                        <h5 class="font-weight-bold">Location</h5>
+                        <li class="lead">
+                          <strong class="lead mr-2 fs-5 font-weight-normal"
+                            >Start point:</strong
+                          >Dhaka North City Corporation
+                        </li>
+
+                        <li class="lead">
+                          <strong class="lead mr-2 fs-5 font-weight-normal"
+                            >End point:</strong
+                          >Mymensingh, formerly Nasirabad, city, north-central
+                          Bangladesh
+                        </li>
+
+                        <!-- date and time -->
+                        <h5 class="mt-4">Date & time</h5>
+                        <li class="lead">
+                          <strong class="lead mr-2 fs-5 font-weight-normal"
+                            >Date:</strong
+                          >07 Sep, 2023
+                        </li>
+
+                        <li class="lead">
+                          <strong class="lead mr-2 fs-5 font-weight-normal"
+                            >Time:</strong
+                          >03: 30 PM
+                        </li>
+
+                        <!-- Estimated Fare -->
+                        <h5 class="mt-4">Estimated Fare</h5>
+                        <li class="lead">
+                          <strong class="lead mr-2 fs-5 font-weight-normal"
+                            >Body Rent :</strong
+                          >2200-3200/-
+                        </li>
+
+                        <li class="lead">
+                          <strong class="lead mr-2 fs-5 font-weight-normal"
+                            >Road Cost:</strong
+                          >As Actual
+                        </li>
+
+                        <li class="lead">
+                          <strong class="lead mr-2 fs-5 font-weight-normal"
+                            >Per KM:</strong
+                          >CNG 10/- LPG 11/- Octane 16/-
+                        </li>
+
+                        <!-- Estimated and offer price -->
+                        <h5 class="mt-4">Estimated & offer price</h5>
+                        <li class="lead">
+                          <strong class="lead mr-2 fs-5 font-weight-normal"
+                            >Estimated price:</strong
+                          >7, 000 Taka
+                        </li>
+
+                        <li class="lead">
+                          <strong class="lead mr-2 fs-5 font-weight-normal"
+                            >Offer price:</strong
+                          >6, 500 Taka
+                        </li>
+
+                        <!-- add note -->
+                        <div class="mt-4">
+                          <h5 class="">Your note</h5>
+                          <p class="lead">
+                            Quo voluptas magni debitis accusamus fugiat cumque
+                            sint corporis cupiditate, placeat laborum!
+                            Asperiores hic quibusdam quisquam praesentium
+                            reprehenderit officiis? Officia, omnis aut.
+                          </p>
+                        </div>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -576,6 +855,10 @@
     </div>
 
     <!-- Bootstrap JS CDN calling -->
+    <!-- Bootstrap JavaScript (jQuery and Popper.js are required dependencies) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

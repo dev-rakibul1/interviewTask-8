@@ -646,6 +646,16 @@ article.car-article li strong {
   padding-left: 0em;
 }
 
+.divider-wrap .form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-left: -1.25rem;
+}
+
+.divider-wrap label {
+  margin-bottom: 0;
+}
+
 /* package rent 2 */
 .map-position-wrap {
   display: flex;
@@ -713,4 +723,23 @@ article.car-article li strong {
   align-items: center;
   color: #696969;
   font-size: 15px;
+}
+
+.package-rent-checkbox img {
+  width: 20px;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.package-rent-user-data p,
+.package-rent-user-data li {
+  font-size: 15px;
+}
+
+.package-rent-user-data li strong {
+  font-size: 15px !important;
+}
+.package-rent-user-data h5 {
+  font-size: 18px !important;
+  font-weight: 500 !important;
 }
