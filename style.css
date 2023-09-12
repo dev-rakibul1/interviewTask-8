@@ -743,3 +743,11 @@ article.car-article li strong {
   font-size: 18px !important;
   font-weight: 500 !important;
 }
+
+/* package rent checkbox */
+.package-rent-checkbox {
+  border-radius: 100% !important;
+  width: 18px;
+  height: 18px;
+  background-color: #9edaff;
+}
