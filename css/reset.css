@@ -512,4 +512,143 @@ strong {
   margin-top: 16px;
 }
 
+/* -------------------------------------------------------------------------- */
+/* package rent 2 map small size and large size */
+/* -------------------------------------------------------------------------- */
+
+/* small size */
+.map-position-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.map-position-wrap span:first-child {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border: 1px solid #848181;
+  border-radius: 100%;
+}
+
+.map-position-wrap span:nth-child(2),
+.map-position-wrap span:nth-child(3),
+.map-position-wrap span:nth-child(4) {
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #848181;
+  margin-top: 4px;
+}
+
+.map-position-wrap span:last-child {
+  margin-top: 1px;
+  color: #848181;
+  font-size: 12px;
+}
+
+/* large size */
+.map-position-large-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.map-position-large-size span:first-child {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid #848181;
+  border-radius: 100%;
+}
+
+.map-position-large-size span:nth-child(2),
+.map-position-large-size span:nth-child(3),
+.map-position-large-size span:nth-child(4) {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #848181;
+  margin-top: 12px;
+}
+
+.map-position-large-size span:last-child {
+  margin-top: 12px;
+  color: #848181;
+  font-size: 18px;
+}
+
+/* triangle shape */
+
+.iphone-header-star {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+}
+
+.iphone-header-star ul li i {
+  font-size: 15px;
+}
+
+.btn-triangle-shape {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 100%;
+  left: 25%;
+}
+
+.btn-triangle-shape span:first-child {
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.btn-triangle-shape span:nth-child(2) {
+  width: 2px;
+  height: 26px;
+  background: #212529;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: -5px;
+  transform: rotate(55deg);
+}
+.btn-triangle-shape span:last-child {
+  width: 2px;
+  height: 16px;
+  background: #212529;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                        iphone cross icon*/
+/* -------------------------------------------------------------------------- */
+
+.iphone-cross-icon {
+  position: relative;
+  cursor: pointer;
+}
+.iphone-cross-icon span {
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 25px;
+}
+
 /* ===================================0END0==================================== */

@@ -656,38 +656,6 @@ article.car-article li strong {
   margin-bottom: 0;
 }
 
-/* package rent 2 */
-.map-position-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.map-position-wrap span:first-child {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  border: 1px solid #848181;
-  border-radius: 100%;
-}
-
-.map-position-wrap span:nth-child(2),
-.map-position-wrap span:nth-child(3),
-.map-position-wrap span:nth-child(4) {
-  width: 6px;
-  height: 6px;
-  display: inline-block;
-  border-radius: 100%;
-  background-color: #848181;
-  margin-top: 7px;
-}
-
-.map-position-wrap span:last-child {
-  margin-top: 5px;
-  color: #848181;
-  font-size: 20px;
-}
-
 .login-icon-map-icon {
   position: absolute;
   top: 0;
@@ -750,4 +718,105 @@ article.car-article li strong {
   width: 18px;
   height: 18px;
   background-color: #fff;
+}
+
+/* ==========================================================================*/
+/*                          Iphone 1 page styling
+/*========================================================================== */
+
+.success-message-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pad: 5px;
+}
+
+.success-message-icon i {
+  font-size: 18px;
+}
+
+/* ==========================================================================*/
+/*                          Iphone 2 page styling
+/*========================================================================== */
+
+.car-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
+}
+
+.car-image-gallery img {
+  width: 87px;
+  height: 87px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.iphone-two-terms-conditions {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 1px solid #93fafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pad: 5px;
+  background-color: #93fafa;
+}
+
+.iphone-two-terms-conditions i {
+  font-size: 10px;
+}
+
+.iphone-two-day-booking-details-border {
+  position: relative;
+  width: 2px;
+  height: 50px;
+  background: #000;
+  display: inline-block;
+}
+
+/* ==========================================================================*/
+/*                          Iphone 3 page styling
+  /*========================================================================== */
+.iphone-three-btn {
+  cursor: pointer;
+}
+.iphone-three-btn span {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+/* content */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.content3 {
+  grid-column: span 2;
+  background-color: #d9d9d9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.content1,
+.content2 {
+  background-color: #d9d9d9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
 }
