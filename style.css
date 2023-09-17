@@ -740,9 +740,51 @@ article.car-article li strong {
 }
 
 /* ==========================================================================*/
-/*                          Iphone 2 page styling
+/*                          Driver 2 page styling
 /*========================================================================== */
 
+span.select2-selection.select2-selection--single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99c8ff;
+  border: none;
+  color: red;
+  height: 40px;
+  max-height: 100%;
+}
+
+span.select2-selection__arrow {
+  position: relative !important;
+  width: 20px;
+  height: 20px !important;
+  border: 1px solid #000;
+  border-radius: 100%;
+  color: #fff !important;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__placeholder {
+  color: #000;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  border-color: #000 transparent transparent;
+}
+
+.select2-container--default.select2-container--open
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  border-color: transparent transparent #000 transparent;
+}
+/* ==========================================================================*/
+/*                          Iphone 2 page styling
+/*========================================================================== */
 .car-image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));

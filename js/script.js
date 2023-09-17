@@ -51,6 +51,7 @@ menuOverly.addEventListener('click', () => {
 
 
 
+
 //Pre loader
 document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
@@ -99,6 +100,7 @@ searchClose.addEventListener('click', () => {
         searchOverly.classList.remove("search-overly-add");
     }
 })
+
 
 
 
@@ -186,6 +188,6 @@ countdownTimer(targetTime);
 
 
 
-    // -------------------JAVASCRIPT DATE PICKER----------------------
+// -------------------JAVASCRIPT DATE PICKER----------------------
 
 
