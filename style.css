@@ -426,7 +426,7 @@
   position: absolute;
   top: -10px;
   right: 0;
-  background-color: #ff5622;
+  background-color: #ff0000;
   color: #fff;
   width: 30px;
   height: 30px;
@@ -762,12 +762,12 @@ article.car-article li strong {
   width: 18px;
   height: 18px;
   border-radius: 100%;
-  border: 1px solid #93fafa;
+  border: 1px solid #66aef1;
   display: flex;
   justify-content: center;
   align-items: center;
   pad: 5px;
-  background-color: #93fafa;
+  background-color: #66aef1;
 }
 
 .iphone-two-terms-conditions i {
@@ -780,6 +780,7 @@ article.car-article li strong {
   height: 50px;
   background: #000;
   display: inline-block;
+  margin: 0 10px;
 }
 
 /* ==========================================================================*/

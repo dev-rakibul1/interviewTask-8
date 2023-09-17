@@ -5,6 +5,7 @@
   list-style-type: none;
   margin-top: 10px;
   display: inline-block;
+  padding: 0 15px;
 }
 
 .off-canvas-menu ul li a i {

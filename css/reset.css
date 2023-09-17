@@ -269,7 +269,7 @@ strong {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: rgb(147, 250, 250);
+  background-color: #99c8ff;
   color: #000;
 }
 
