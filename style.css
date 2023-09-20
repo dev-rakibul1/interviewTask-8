@@ -788,16 +788,16 @@ span.select2-selection__arrow {
 .car-image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-  gap: 10px;
+  gap: 0px;
 }
 
 .car-image-gallery img {
-  width: 87px;
-  height: 87px;
+  width: 61px;
+  height: 61px;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .iphone-two-terms-conditions {
@@ -862,4 +862,10 @@ span.select2-selection__arrow {
   text-align: center;
   padding: 20px;
   border-radius: 6px;
+}
+
+.iphone-cross-icon {
+  position: absolute;
+  top: -19px;
+  right: -26px;
 }

@@ -1,0 +1,50 @@
+.muthoCar-map-location-wrap {
+  width: 90%;
+  margin-left: auto;
+}
+
+.muthoCar-map-location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+
+.muthoCar-map-location .map-dots-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: -6%;
+}
+.muthoCar-map-location .map-dots-box .big-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid #848181;
+  display: inline-block;
+}
+
+.muthoCar-map-location .map-dots-box .small-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  border: 1px solid #848181;
+  display: inline-block;
+  background-color: #848181;
+  margin-top: 6px;
+}
+
+/* .muthoCar-map-location  input filed */
+.muthoCar-map-location input {
+  height: 40px;
+  width: 100%;
+}
+
+.map-dots-box i {
+  color: #848181;
+}
