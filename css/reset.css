@@ -185,7 +185,7 @@ li {
 }
 
 .ml-4 {
-  margin-left: 28px;
+  margin-left: 28px !important;
 }
 
 .ml-5 {
@@ -385,6 +385,7 @@ strong {
   margin-right: auto;
   padding: 25px 50px;
   background-color: #fff;
+  z-index: 99;
 }
 .footer-social .footer-social-icon-wrap {
   display: flex;
