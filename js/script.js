@@ -70,6 +70,8 @@ document.onreadystatechange = function () {
 
 
 
+
+
 try {
     // search click
     clickSearch.addEventListener("click", function () {
