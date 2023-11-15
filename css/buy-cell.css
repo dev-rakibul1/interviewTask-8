@@ -18,3 +18,21 @@
   width: 100% !important;
   max-width: 100% !important;
 }
+
+.main-slider img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  max-height: 100%;
+  border-radius: 15px;
+}
+.thumbnail-slider img {
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 15px;
+  max-height: 100%;
+}

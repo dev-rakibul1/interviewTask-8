@@ -1,7 +1,7 @@
 $('.buy-sell-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     centerPadding: '60px',
     margin: 20,
@@ -11,3 +11,4 @@ $('.buy-sell-slider').slick({
     arrows: false,
     dots: true
 });
+

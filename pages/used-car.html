@@ -216,25 +216,613 @@
                     src="../images/icon/location-2.png"
                     alt="location"
                     style="width: 20px"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#car-location-search"
                   />
                   <img
                     src="../images/icon/setting-2.png"
                     alt="setting"
                     class="ml-2"
                     style="width: 20px"
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#car-filter-search"
                   />
+
+                  <!-- Modal 1 for location search -->
+                  <div
+                    class="modal fade"
+                    id="car-location-search"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            filtering search
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container">
+                            <div
+                              class="accordion accordion-flush"
+                              id="accordionFlushExample"
+                            >
+                              <div class="accordion-item">
+                                <h2
+                                  class="accordion-header"
+                                  id="flush-headingOne"
+                                >
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseOne"
+                                  >
+                                    <label for="faq-drawer"
+                                      >Location types
+                                    </label>
+                                  </button>
+                                </h2>
+                                <div
+                                  id="flush-collapseOne"
+                                  class="accordion-collapse collapse"
+                                  aria-labelledby="flush-headingOne"
+                                  data-bs-parent="#accordionFlushExample"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="p-4">
+                                      <div
+                                        class="buy-sell-search-box position-relative"
+                                      >
+                                        <input
+                                          type="search"
+                                          name=""
+                                          class="p-2 rounded-5 px-4"
+                                          style="position: static"
+                                          id=""
+                                        />
+                                        <span class="p-2 px-3 cursor-pointer"
+                                          ><i
+                                            class="fa-solid fa-magnifying-glass"
+                                          ></i
+                                        ></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2
+                                  class="accordion-header"
+                                  id="flush-headingTwo"
+                                >
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseTwo"
+                                  >
+                                    Fuel Types
+                                  </button>
+                                </h2>
+                                <div
+                                  id="flush-collapseTwo"
+                                  class="accordion-collapse collapse"
+                                  aria-labelledby="flush-headingTwo"
+                                  data-bs-parent="#accordionFlushExample"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="p-4">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="petrol"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="petrol"
+                                        >
+                                          Petrol
+                                        </label>
+                                      </div>
+                                      <!-- fields 2 -->
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="diesel"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="diesel"
+                                        >
+                                          Diesel
+                                        </label>
+                                      </div>
+                                      <!-- fields 3 -->
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="cng"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="cng"
+                                        >
+                                          CNG
+                                        </label>
+                                      </div>
+                                      <!-- fields 4 -->
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="lpg"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="lpg"
+                                        >
+                                          LPG
+                                        </label>
+                                      </div>
+                                      <!-- fields 5 -->
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="electric"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="electric"
+                                        >
+                                          Electric
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2
+                                  class="accordion-header"
+                                  id="flush-headingThree"
+                                >
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseThree"
+                                  >
+                                    Transmission
+                                  </button>
+                                </h2>
+                                <div
+                                  id="flush-collapseThree"
+                                  class="accordion-collapse collapse"
+                                  aria-labelledby="flush-headingThree"
+                                  data-bs-parent="#accordionFlushExample"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="p-4">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="automatic"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="automatic"
+                                        >
+                                          Automatic
+                                        </label>
+                                      </div>
+                                      <!-- fields 2 -->
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="manual"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="manual"
+                                        >
+                                          Manual
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Search
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal 2 for filter search -->
+                  <div
+                    class="modal fade"
+                    id="car-filter-search"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            filtering search
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div
+                            class="accordion accordion-flush"
+                            id="accordionFlushExample"
+                          >
+                            <div class="accordion-item">
+                              <h2
+                                class="accordion-header"
+                                id="flush-headingOne"
+                              >
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#flush-collapseOne"
+                                  aria-expanded="false"
+                                  aria-controls="flush-collapseOne"
+                                >
+                                  Budget
+                                </button>
+                              </h2>
+                              <div
+                                id="flush-collapseOne"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne"
+                                data-bs-parent="#accordionFlushExample"
+                              >
+                                <div class="accordion-body">
+                                  <div class="p-4">
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckDefault"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="flexCheckDefault"
+                                      >
+                                        Up to 3 lakh
+                                      </label>
+                                    </div>
+                                    <!-- fields 2 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckChecked"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="flexCheckChecked"
+                                      >
+                                        3-4 lakh
+                                      </label>
+                                    </div>
+                                    <!-- fields 3 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckChecked3"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="flexCheckChecked3"
+                                      >
+                                        6-8 lakh
+                                      </label>
+                                    </div>
+                                    <!-- fields 4 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckChecked4"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="flexCheckChecked4"
+                                      >
+                                        10-12 lakh
+                                      </label>
+                                    </div>
+                                    <!-- fields 5 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckChecked5"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="flexCheckChecked5"
+                                      >
+                                        15-18 lakh
+                                      </label>
+                                    </div>
+                                    <!-- fields 7 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckChecked7"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="flexCheckChecked7"
+                                      >
+                                        18-20 lakh
+                                      </label>
+                                    </div>
+                                    <!-- fields 8 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="flexCheckChecked8"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="flexCheckChecked8"
+                                      >
+                                        20 lakh and above
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2
+                                class="accordion-header"
+                                id="flush-headingTwo"
+                              >
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#flush-collapseTwo"
+                                  aria-expanded="false"
+                                  aria-controls="flush-collapseTwo"
+                                >
+                                  Fuel Type
+                                </button>
+                              </h2>
+                              <div
+                                id="flush-collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo"
+                                data-bs-parent="#accordionFlushExample"
+                              >
+                                <div class="accordion-body">
+                                  <div class="p-4">
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="petrol"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="petrol"
+                                      >
+                                        Petrol
+                                      </label>
+                                    </div>
+                                    <!-- fields 2 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="diesel"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="diesel"
+                                      >
+                                        Diesel
+                                      </label>
+                                    </div>
+                                    <!-- fields 3 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="cng"
+                                      />
+                                      <label class="form-check-label" for="cng">
+                                        CNG
+                                      </label>
+                                    </div>
+                                    <!-- fields 4 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="lpg"
+                                      />
+                                      <label class="form-check-label" for="lpg">
+                                        LPG
+                                      </label>
+                                    </div>
+                                    <!-- fields 5 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="electric"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="electric"
+                                      >
+                                        Electric
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2
+                                class="accordion-header"
+                                id="flush-headingThree"
+                              >
+                                <button
+                                  class="accordion-button collapsed"
+                                  type="button"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#flush-collapseThree"
+                                  aria-expanded="false"
+                                  aria-controls="flush-collapseThree"
+                                >
+                                  Transmission
+                                </button>
+                              </h2>
+                              <div
+                                id="flush-collapseThree"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree"
+                                data-bs-parent="#accordionFlushExample"
+                              >
+                                <div class="accordion-body">
+                                  <div class="p-4">
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="automatic"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="automatic"
+                                      >
+                                        Automatic
+                                      </label>
+                                    </div>
+                                    <!-- fields 2 -->
+                                    <div class="form-check">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="manual"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="manual"
+                                      >
+                                        Manual
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Search
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <!-- trip btn -->
-
               <div class="w-100" style="margin-bottom: 90px">
                 <div class="">
                   <!-- post 01 -->
                   <div class="buy-cell-all-post pt-2">
                     <div class="row">
                       <div class="col-12">
-                        <div class="" style="background-color: #d9ebff">
+                        <div
+                          class="rounded-3"
+                          style="background-color: #d9ebff"
+                        >
                           <img
                             src="../images/used-car/car-1.png"
                             alt="images"
@@ -266,7 +854,10 @@
                         </div>
                       </div>
                       <div class="col-12 mt-2">
-                        <div class="" style="background-color: #d9ebff">
+                        <div
+                          class="rounded-3"
+                          style="background-color: #d9ebff"
+                        >
                           <img
                             src="../images/used-car/car-2.png"
                             alt="images"
@@ -298,7 +889,10 @@
                         </div>
                       </div>
                       <div class="col-12 mt-2">
-                        <div class="" style="background-color: #d9ebff">
+                        <div
+                          class="rounded-3"
+                          style="background-color: #d9ebff"
+                        >
                           <img
                             src="../images/used-car/car-3.png"
                             alt="images"
