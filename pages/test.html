@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-step Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .form-step {
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+
+      button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-step show" data-step="1">
+      <h2>Step 1: Name</h2>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required />
+      <br />
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required />
+      <br />
+      <button class="next-btn">Next</button>
+    </div>
+
+    <div class="form-step" data-step="2">
+      <h2>Step 2: Contact Information</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <br />
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required />
+      <br />
+      <button class="next-btn">Next</button>
+    </div>
+
+    <div class="form-step" data-step="3">
+      <h2>Step 3: Address</h2>
+      <label for="address">Address:</label>
+      <input type="text" id="address" required />
+      <br />
+      <label for="postalCode">Postal Code:</label>
+      <input type="text" id="postalCode" required />
+      <br />
+      <button class="submit-btn">Submit</button>
+    </div>
+
+    <script>
+      let currentStep = 1;
+      const formData = {};
+
+      function showStep(step) {
+        document.querySelectorAll(".form-step").forEach((stepElement) => {
+          stepElement.classList.remove("show");
+        });
+
+        document
+          .querySelector(`.form-step[data-step="${step}"]`)
+          .classList.add("show");
+      }
+
+      function saveFormData() {
+        const stepElement = document.querySelector(
+          `.form-step[data-step="${currentStep}"]`
+        );
+        const inputFields = stepElement.querySelectorAll("input");
+
+        inputFields.forEach((input) => {
+          formData[input.id] = input.value;
+        });
+      }
+
+      function nextStep() {
+        saveFormData();
+        currentStep++;
+        showStep(currentStep);
+      }
+
+      function submitForm() {
+        saveFormData();
+        console.log("Form Data:", formData);
+        alert("Form submitted successfully! Check the console for data.");
+      }
+
+      document.querySelectorAll(".next-btn").forEach((btn) => {
+        btn.addEventListener("click", nextStep);
+      });
+
+      document
+        .querySelector(".submit-btn")
+        .addEventListener("click", submitForm);
+    </script>
+  </body>
+</html>
