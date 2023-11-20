@@ -19,6 +19,16 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
     <!-- reset css -->
     <link rel="stylesheet" href="../css/reset.css" />
 
@@ -197,1064 +207,1937 @@
             >
               <!-- trip btn -->
               <div class="w-100" style="margin-bottom: 90px">
-                <span id="errorMeg"></span>
-                <div class="container">
-                  <!-- Step 1 -->
-                  <div class="form-step show" data-step="1">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Location</span>
-                      </div>
-
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
-                      </div>
-                    </div>
-                    <div class="text-center">
-                      <p class="py-4">Where will you sell the car from?</p>
-
-                      <div class="">
-                        <img src="../images/logo/location-2.png" alt="" />
-                        <span class="pt-3 d-inline-block" id="location"></span>
-                      </div>
-                    </div>
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <!-- Step 2 -->
-                  <div class="form-step" data-step="2">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Condition</span>
-                      </div>
-
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
-                      </div>
-                    </div>
-                    <p>Choose your car condition:</p>
-
-                    <!-- used -->
-                    <div
-                      class="next-btn cursor-pointer position-relative"
-                      id="choose-car"
-                    >
-                      <div
-                        class="d-flex justify-content-between mt-3 px-4 py-2 rounded-3 align-items-center"
-                        style="background-color: #eff0f0"
-                      >
-                        <p>
-                          <span
-                            id="used-car"
-                            class="d-block"
-                            style="font-size: 16px"
-                            >Used</span
-                          >
-                          <small class="d-block" style="font-size: 16px"
-                            >[Bangladeshi used]</small
-                          >
-                        </p>
-                        <img
-                          src="../images/logo/next-2.png"
-                          style="width: 18px"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-
-                    <!-- reconditioned -->
-                    <div
-                      class="next-btn position-relative cursor-pointer"
-                      id="choose-car"
-                    >
-                      <div
-                        class="d-flex justify-content-between mt-3 px-4 py-2 rounded-3 align-items-center"
-                        style="background-color: #eff0f0"
-                      >
-                        <p>
-                          <span
-                            id="used-car-reconditioned"
-                            class="d-block"
-                            style="font-size: 16px"
-                            >reconditioned</span
-                          >
-                          <small class="d-block" style="font-size: 16px"
-                            >[Foreign Used and Unregistered]</small
-                          >
-                        </p>
-                        <img
-                          src="../images/logo/next-2.png"
-                          style="width: 18px"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-
-                    <!-- New -->
-                    <div
-                      class="next-btn position-relative cursor-pointer"
-                      id="choose-car"
-                    >
-                      <div
-                        class="d-flex justify-content-between mt-3 px-4 py-2 rounded-3 align-items-center"
-                        style="background-color: #eff0f0"
-                      >
-                        <p>
-                          <span
-                            id="used-car-new"
-                            class="d-block"
-                            style="font-size: 16px"
-                            >New</span
-                          >
-                          <small class="d-block" style="font-size: 16px"
-                            >[ Brand new and Unregistered]</small
-                          >
-                        </p>
-                        <img
-                          src="../images/logo/next-2.png"
-                          style="width: 18px"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-
-                    <!-- <button class="next-btn" id="choose-car">Next</button> -->
-                  </div>
-
-                  <!-- Step 3 -->
-                  <div class="form-step" data-step="3">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Vehicles Type</span>
-                      </div>
-
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
-                      </div>
-                    </div>
-                    <p class="py-3">Choose your car type</p>
-
-                    <div class="row">
-                      <div class="col-4">
-                        <!-- sedan -->
-                        <div
-                          class="position-relative cursor-pointer text-center d-inline-block"
-                        >
-                          <img
-                            src="../images/logo/car-1.png"
-                            alt="car"
-                            style="background: #d9d9d9"
-                            class="rounded-3 d-inline-block px-5 mx-2 py-1"
-                          />
-                          <span
-                            class="d-block car-type"
-                            id="car-type-sedan"
-                            style="font-size: 16px"
-                            >Sedan</span
-                          >
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <!-- noah -->
-                        <div
-                          class="position-relative cursor-pointer text-center d-inline-block"
-                        >
-                          <img
-                            src="../images/logo/van-1.png"
-                            alt="car"
-                            style="background: #d9d9d9"
-                            class="rounded-3 d-inline-block px-5 mx-2 py-1"
-                          />
-                          <span
-                            class="d-block car-type"
-                            id="car-type-noah"
-                            style="font-size: 16px"
-                            >Noah</span
-                          >
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <!-- HiAce  -->
-                        <div
-                          class="position-relative cursor-pointer text-center d-inline-block"
-                        >
-                          <img
-                            src="../images/logo/minibus-1.png"
-                            alt="car"
-                            style="background: #d9d9d9"
-                            class="rounded-3 d-inline-block px-5 mx-2 py-1"
-                          />
-                          <span
-                            class="d-block car-type"
-                            id="car-type-hiace"
-                            style="font-size: 16px"
-                            >Hiace</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row mt-4">
-                      <div class="col-4">
-                        <!-- sub -->
-                        <div
-                          class="position-relative cursor-pointer text-center d-inline-block"
-                        >
-                          <img
-                            src="../images/logo/suv-1.png"
-                            alt="car"
-                            style="background: #d9d9d9"
-                            class="rounded-3 d-inline-block px-5 mx-2 py-1"
-                          />
-                          <span
-                            class="d-block car-type"
-                            id="car-type-suv"
-                            style="font-size: 16px"
-                            >SUV
-                          </span>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <!-- Mini bus -->
-                        <div
-                          class="position-relative cursor-pointer text-center d-inline-block"
-                        >
-                          <img
-                            src="../images/logo/bus-1.png"
-                            alt="car"
-                            style="background: #d9d9d9"
-                            class="rounded-3 d-inline-block px-5 mx-2 py-1"
-                          />
-                          <span
-                            class="d-block car-type"
-                            id="car-type-minibus"
-                            style="font-size: 16px"
-                            >Mini bus</span
-                          >
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <!-- Track -->
-                        <div
-                          class="position-relative cursor-pointer text-center d-inline-block"
-                        >
-                          <img
-                            src="../images/logo/truck-2.png"
-                            alt="car"
-                            style="background: #d9d9d9"
-                            class="rounded-3 d-inline-block px-5 mx-2 py-1"
-                          />
-                          <span
-                            class="d-block car-type"
-                            id="car-type-track"
-                            style="font-size: 16px"
-                            >Track</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="d-flex justify-content-between align-items-center w-full"
-                    ></div>
-
-                    <!-- other car title -->
-                    <div
-                      class="d-flex justify-content-center align-items-center w-100 border mt-3"
-                    >
-                      <label class="w-50 text-center" for="carOthers"
-                        >Others</label
-                      >
-                      <input class="w-50" id="carOthers" type="text" />
-                    </div>
-
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <!-- Step 4 -->
-                  <div class="form-step" data-step="4">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Vehicles Brand</span>
-                      </div>
-
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
-                      </div>
-                    </div>
-                    <p class="py-3">Choose your brand</p>
-
-                    <div class="row">
-                      <div class="col-4">
-                        <!-- sedan -->
-                        <div class="cursor-pointer text-center d-inline-block">
-                          <div class="position-relative">
-                            <img
-                              src="../images/logo/toyota-logos-brands-logotypes-0 1.png"
-                              alt="car"
-                              style="background: #d9d9d9"
-                              class="rounded-3 d-inline-block px-5 mx-2 py-3"
-                            />
-
-                            <span
-                              class="car-type d-block"
-                              style="font-size: 16px"
-                              >Toyota</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <!-- sedan -->
-                        <div class="cursor-pointer text-center d-inline-block">
-                          <div class="position-relative">
-                            <img
-                              src="../images/logo/png-transparent-honda-logo-1.png"
-                              alt="car"
-                              style="background: #d9d9d9"
-                              class="rounded-3 d-inline-block px-5 mx-2 py-3"
-                            />
-                            <span
-                              class="car-type d-block"
-                              style="font-size: 16px"
-                              >Honda</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <!-- Nissan -->
-                        <div
-                          class="position-relative cursor-pointer text-center d-inline-block"
-                        >
-                          <img
-                            src="../images/logo/Nissan_logo-1.png"
-                            alt="car"
-                            style="background: #d9d9d9"
-                            class="rounded-3 d-inline-block px-5 mx-2 py-3"
-                          />
-                          <span class="car-type d-block" style="font-size: 16px"
-                            >Nissan</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row mt-4">
-                      <div class="col-4">
-                        <!-- Hyundai -->
-                        <div class="cursor-pointer text-center d-inline-block">
-                          <div class="position-relative">
-                            <img
-                              src="../images/logo/hyundai-1.png"
-                              alt="car"
-                              style="background: #d9d9d9"
-                              class="rounded-3 d-inline-block px-5 mx-2 py-3"
-                            />
-
-                            <span
-                              class="car-type d-block"
-                              style="font-size: 16px"
-                              >Hyundai</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <!-- KIA -->
-                        <div class="cursor-pointer text-center d-inline-block">
-                          <div class="position-relative">
-                            <img
-                              src="../images/logo/Kia-logo-1.png"
-                              alt="car"
-                              style="background: #d9d9d9"
-                              class="rounded-3 d-inline-block px-5 mx-2 py-3"
-                            />
-                            <span
-                              class="car-type d-block"
-                              style="font-size: 16px"
-                              >KIA</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <!-- Mitsubishi -->
-                        <div
-                          class="position-relative cursor-pointer text-center d-inline-block"
-                        >
-                          <img
-                            src="../images/logo/Mitsubishi-logo-1.png"
-                            alt="car"
-                            style="background: #d9d9d9"
-                            class="rounded-3 d-inline-block px-5 mx-2 py-3"
-                          />
-                          <span class="car-type d-block" style="font-size: 16px"
-                            >Mitsubishi</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- others field -->
-                    <div
-                      class="d-flex justify-content-center align-items-center w-100 border mt-3"
-                    >
-                      <label class="w-50 text-center" for="otherBrands"
-                        >Others</label
-                      >
-                      <input class="w-50" id="otherBrands" type="text" />
-                    </div>
-
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <!-- Step 5 -->
-                  <div class="form-step" data-step="5">
-                    <!-- title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Vehicles Title</span>
-                      </div>
-
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
-                      </div>
-                    </div>
-                    <p class="py-3">Select your vehicle title:</p>
-
-                    <div class="">
-                      <div class="d-flex justify-content-between">
-                        <span class="child p-3 vehicles-title">Corolla</span>
-                        <span class="child p-3 vehicles-title">Axio</span>
-                        <span class="child p-3 vehicles-title">Allion</span>
-                      </div>
-
-                      <!-- row 2 -->
-                      <div class="d-flex justify-content-between">
-                        <span class="child p-3 vehicles-title">Premio</span>
-                        <span class="child p-3 vehicles-title">Seloon</span>
-                        <span class="child p-3 vehicles-title">Hiace</span>
-                      </div>
-
-                      <!-- row 3 -->
-                      <div class="d-flex justify-content-between">
-                        <span class="child p-3 vehicles-title">Premio</span>
-                        <span class="child p-3 vehicles-title">Noha</span>
-                        <span class="child p-3 vehicles-title">Hiace</span>
-                      </div>
-                    </div>
-
-                    <!-- others field -->
-                    <div
-                      class="d-flex justify-content-center align-items-center w-100 border mt-3"
-                    >
-                      <label class="w-50 text-center" for="othersVehiclesTitle"
-                        >Others</label
-                      >
-                      <input
-                        class="w-50"
-                        id="othersVehiclesTitle"
-                        type="text"
-                      />
-                    </div>
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <!-- Step 6 -->
-                  <div class="form-step" data-step="6">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Manufacture Year</span>
-                      </div>
-
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
-                      </div>
-                    </div>
-
-                    <!-- Manufacture Year -->
-                    <div
-                      class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
-                    >
-                      <label class="w-50 text-center" for="manufactureYear"
-                        >Others</label
-                      >
-                      <input
-                        class="w-50 px-2"
-                        id="manufactureYear"
-                        type="text"
-                        placeholder="Write year"
-                      />
-                    </div>
-
-                    <!-- next button -->
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <!-- Step 7 -->
-                  <div class="form-step" data-step="7">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Registration Year</span>
-                      </div>
-
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
-                      </div>
-                    </div>
-
-                    <!-- registration Year -->
-                    <div
-                      class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
-                    >
-                      <label class="w-50 text-center" for="registrationYear"
-                        >Registration Year</label
-                      >
-                      <input
-                        class="w-50 px-2"
-                        id="registrationYear"
-                        type="text"
-                        placeholder="Write year"
-                      />
-                    </div>
-
-                    <!-- next button -->
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <!-- Step 8 -->
-                  <div class="form-step" data-step="8">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Fuel Types:</span>
-                      </div>
-
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
-                      </div>
-                    </div>
-                    <p class="py-3">Fuel Types:</p>
-                    <div
-                      class="d-flex justify-content-center align-items-center flex-column"
-                    >
-                      <div
-                        class="d-flex align-items-start justify-content-start w-50"
-                      >
-                        <div class="w-50">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            onclick="collectCheckboxValues()"
-                            value="octane"
-                            id="octane"
-                            name="fuel-type"
-                          />
-                          <label for="octane">Octane</label><br />
-                        </div>
-                        <div class="w-50">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            onclick="collectCheckboxValues()"
-                            value="cng"
-                            id="cng"
-                            name="fuel-type"
-                          />
-                          <label for="cng">CNG</label><br />
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex align-items-start justify-content-start w-50 mt-3"
-                      >
-                        <div class="w-50">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            onclick="collectCheckboxValues()"
-                            value="lpg"
-                            id="lpg"
-                            name="fuel-type"
-                          />
-                          <label for="lpg">LPG</label><br />
-                        </div>
-                        <div class="w-50">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            onclick="collectCheckboxValues()"
-                            value="diesel"
-                            id="diesel"
-                            name="fuel-type"
-                          />
-                          <label for="diesel">Diesel</label><br />
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- next button -->
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <!-- Step 9 -->
-                  <div class="form-step" data-step="9">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Transmission:</span>
-                      </div>
-
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
-                      </div>
-                    </div>
-
-                    <p class="py-3">Tick your car Transmission:</p>
+                <!-- Step 1 -->
+                <div class="form-step show" data-step="1">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
                     <div
                       class="d-flex justify-content-center align-items-center"
                     >
+                      <a href="./buy-and-sell-home.html">
+                        <span>
+                          <img
+                            src="../images/logo/back-button-1.png"
+                            alt="back"
+                            style="width: 25px"
+                            class="cursor-pointer"
+                            id="backBtn"
+                          />
+                        </span>
+                      </a>
+                      <span class="d-inline-block ml-2" style="color: #dddd"
+                        >Choose your catagories & Location</span
+                      >
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="text-left" style="font-weight: 500">
+                    <p class="py-3">Please Choose Categories</p>
+
+                    <div class="w-100">
+                      <!-- Catagories items -->
+                      <div class="buy-sell-slider w-100">
+                        <!-- Slide 01 -->
+                        <div class="">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/car-insurance-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">used car</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/bycicle-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Used Bike</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/truck-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Used Track</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/bicycle-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Cycle</p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/car-insurance-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">used car</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/bycicle-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Used Bike</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/truck-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Used Track</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/bicycle-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Cycle</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Slide 02 -->
+                        <div class="">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/car-insurance-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">used car</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/bycicle-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Used Bike</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/truck-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Used Track</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/bicycle-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Cycle</p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/car-insurance-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">used car</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/bycicle-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Used Bike</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/truck-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Used Track</p>
+                            </div>
+
+                            <div
+                              class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                            >
+                              <img
+                                src="../images/logo/bicycle-1.png"
+                                alt=""
+                                style="background: #ddd; width: 100px"
+                                class="py-2 px-4 img-fluid rounded-4"
+                              />
+                              <p class="text-capitalize">Cycle</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- others catagories 1-->
                       <div
-                        class="w-50 d-flex justify-content-center align-items-center"
+                        class="accordion accordion-flush"
+                        id="accordionFlushExample"
                       >
-                        <div class="w-50">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            onclick="collectCheckboxValues()"
-                            value="manual"
-                            id="manual"
-                          />
-                          <label for="manual">Manual</label><br />
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="others-catagoreis-1">
+                            <button
+                              class="accordion-button collapsed border rounded-2"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOne"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseOne"
+                              style="font-weight: 500"
+                            >
+                              Others catagories
+                            </button>
+                          </h2>
+                          <div
+                            id="flush-collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="others-catagoreis-1"
+                            data-bs-parent="#accordionFlushExample"
+                          >
+                            <div class="accordion-body px-1">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div
+                                  class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                                >
+                                  <img
+                                    src="../images/logo/car-insurance-1.png"
+                                    alt=""
+                                    style="background: #ddd; width: 100px"
+                                    class="py-2 px-4 img-fluid rounded-1"
+                                  />
+                                  <p class="text-capitalize">used car</p>
+                                </div>
+                                <div
+                                  class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                                >
+                                  <img
+                                    src="../images/logo/bycicle-1.png"
+                                    alt=""
+                                    style="background: #ddd; width: 100px"
+                                    class="py-2 px-4 img-fluid rounded-1"
+                                  />
+                                  <p class="text-capitalize">Used Bike</p>
+                                </div>
+                                <div
+                                  class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                                >
+                                  <img
+                                    src="../images/logo/truck-1.png"
+                                    alt=""
+                                    style="background: #ddd; width: 100px"
+                                    class="py-2 px-4 img-fluid rounded-1"
+                                  />
+                                  <p class="text-capitalize">Used Track</p>
+                                </div>
+                                <div
+                                  class="text-center mx-auto d-flex justify-content-center cursor-pointer align-items-center flex-column p-2 m-2"
+                                >
+                                  <img
+                                    src="../images/logo/bicycle-1.png"
+                                    alt=""
+                                    style="background: #ddd; width: 100px"
+                                    class="py-2 px-4 img-fluid rounded-1"
+                                  />
+                                  <p class="text-capitalize">Cycle</p>
+                                </div>
+                              </div>
+
+                              <!-- other car title -->
+                              <div
+                                class="d-flex justify-content-center align-items-center w-100 border mt-3"
+                              >
+                                <label
+                                  class="w-50 p-2 text-center"
+                                  for="carOthers"
+                                  >Others Catagories</label
+                                >
+                                <input
+                                  class="w-50 p-2"
+                                  id="carOthers"
+                                  type="text"
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="w-50">
-                          <input
-                            type="checkbox"
-                            class="checkbox"
-                            onclick="collectCheckboxValues()"
-                            value="automatic"
-                            id="automatic"
-                          />
-                          <label for="automatic">Automatic</label><br />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-left mt-3">
+                    <p class="py-3" style="font-weight: 500">
+                      Where will you sell the car from?
+                    </p>
+
+                    <div class="position-relative">
+                      <div
+                        class="position-absolute top-0 left-0 d-flex align-items-center justify-content-center h-100"
+                      >
+                        <img
+                          src="../images/logo/location-2.png"
+                          class=""
+                          alt=""
+                        />
+                      </div>
+                      <input
+                        class="p-2 px-4 border-0 border-bottom"
+                        type="text"
+                        id="location"
+                        value="Sherpur sadar, Mymensingh, Bangladesh"
+                        style="max-width: 100%; width: 100%"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="text-end mt-3">
+                    <button class="next-btn" style="color: #ddd">
+                      Next <img src="../images/logo/next-1.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="form-step" data-step="2">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span>
+                        <img
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
+                          style="width: 25px"
+                          class="cursor-pointer"
+                          id="backBtn"
+                        />
+                      </span>
+                      <span class="d-inline-block ml-2" style="color: #dddd"
+                        >Condition</span
+                      >
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                  <p class="py-3" style="font-weight: 500">
+                    Choose your car condition
+                  </p>
+
+                  <!-- used -->
+                  <div
+                    class="next-btn cursor-pointer position-relative"
+                    id="choose-car"
+                  >
+                    <div
+                      class="d-flex justify-content-between mt-3 px-4 py-2 rounded-3 align-items-center"
+                      style="background-color: #eff0f0"
+                    >
+                      <p>
+                        <span
+                          id="used-car"
+                          class="d-block text-capitalize"
+                          style="font-size: 16px; font-weight: 500"
+                          >Used</span
+                        >
+                        <small class="d-block" style="font-size: 16px"
+                          >[Bangladeshi used]</small
+                        >
+                      </p>
+                      <img
+                        src="../images/logo/next-2.png"
+                        style="width: 18px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <!-- reconditioned -->
+                  <div
+                    class="next-btn position-relative cursor-pointer"
+                    id="choose-car"
+                  >
+                    <div
+                      class="d-flex justify-content-between mt-3 px-4 py-2 rounded-3 align-items-center"
+                      style="background-color: #eff0f0"
+                    >
+                      <p>
+                        <span
+                          id="used-car-reconditioned"
+                          class="d-block text-capitalize"
+                          style="font-size: 16px; font-weight: 500"
+                          >reconditioned</span
+                        >
+                        <small class="d-block" style="font-size: 16px"
+                          >[Foreign Used and Unregistered]</small
+                        >
+                      </p>
+                      <img
+                        src="../images/logo/next-2.png"
+                        style="width: 18px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <!-- New -->
+                  <div
+                    class="next-btn position-relative cursor-pointer"
+                    id="choose-car"
+                  >
+                    <div
+                      class="d-flex justify-content-between mt-3 px-4 py-2 rounded-3 align-items-center"
+                      style="background-color: #eff0f0"
+                    >
+                      <p>
+                        <span
+                          id="used-car-new"
+                          class="d-block text-capitalize"
+                          style="font-size: 16px; font-weight: 500"
+                          >New</span
+                        >
+                        <small class="d-block" style="font-size: 16px"
+                          >[ Brand new and Unregistered]</small
+                        >
+                      </p>
+                      <img
+                        src="../images/logo/next-2.png"
+                        style="width: 18px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <!-- <button class="next-btn" id="choose-car">Next</button> -->
+                </div>
+
+                <!-- Step 3 -->
+                <div class="form-step" data-step="3">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span>
+                        <img
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
+                          style="width: 25px"
+                          class="cursor-pointer"
+                          id="backBtn"
+                        />
+                      </span>
+                      <span class="d-inline-block ml-2" style="color: #dddd">
+                        Vehicles Type
+                      </span>
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                  <p class="py-3" style="font-weight: 500">
+                    Choose your car type
+                  </p>
+
+                  <div class="row">
+                    <div class="col-4">
+                      <!-- sedan -->
+                      <div
+                        class="position-relative cursor-pointer text-center d-inline-block"
+                      >
+                        <img
+                          src="../images/logo/car-1.png"
+                          alt="car"
+                          style="background: #d9d9d9"
+                          class="rounded-3 d-inline-block px-5 mx-2 py-2"
+                        />
+                        <span
+                          class="d-block car-type"
+                          id="car-type-sedan"
+                          style="font-size: 16px"
+                          >Sedan</span
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <!-- noah -->
+                      <div
+                        class="position-relative cursor-pointer text-center d-inline-block"
+                      >
+                        <img
+                          src="../images/logo/van-1.png"
+                          alt="car"
+                          style="background: #d9d9d9"
+                          class="rounded-3 d-inline-block px-5 mx-2 py-1"
+                        />
+                        <span
+                          class="d-block car-type"
+                          id="car-type-noah"
+                          style="font-size: 16px"
+                          >Noah</span
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <!-- HiAce  -->
+                      <div
+                        class="position-relative cursor-pointer text-center d-inline-block"
+                      >
+                        <img
+                          src="../images/logo/minibus-1.png"
+                          alt="car"
+                          style="background: #d9d9d9"
+                          class="rounded-3 d-inline-block px-5 mx-2 py-1"
+                        />
+                        <span
+                          class="d-block car-type"
+                          id="car-type-hiace"
+                          style="font-size: 16px"
+                          >Hiace</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-4">
+                      <!-- sub -->
+                      <div
+                        class="position-relative cursor-pointer text-center d-inline-block"
+                      >
+                        <img
+                          src="../images/logo/suv-1.png"
+                          alt="car"
+                          style="background: #d9d9d9"
+                          class="rounded-3 d-inline-block px-5 mx-2 py-1"
+                        />
+                        <span
+                          class="d-block car-type"
+                          id="car-type-suv"
+                          style="font-size: 16px"
+                          >SUV
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <!-- Mini bus -->
+                      <div
+                        class="position-relative cursor-pointer text-center d-inline-block"
+                      >
+                        <img
+                          src="../images/logo/bus-1.png"
+                          alt="car"
+                          style="background: #d9d9d9"
+                          class="rounded-3 d-inline-block px-5 mx-2 py-1"
+                        />
+                        <span
+                          class="d-block car-type"
+                          id="car-type-minibus"
+                          style="font-size: 16px"
+                          >Mini bus</span
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <!-- Track -->
+                      <div
+                        class="position-relative cursor-pointer text-center d-inline-block"
+                      >
+                        <img
+                          src="../images/logo/truck-2.png"
+                          alt="car"
+                          style="background: #d9d9d9"
+                          class="rounded-3 d-inline-block px-5 mx-2 py-1"
+                        />
+                        <span
+                          class="d-block car-type"
+                          id="car-type-track"
+                          style="font-size: 16px"
+                          >Track</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center w-full"
+                  ></div>
+
+                  <!-- others Vehicles Type -->
+                  <div
+                    class="accordion accordion-flush mt-3"
+                    id="accordionFlushExample"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="othersVehiclesTypes">
+                        <button
+                          class="accordion-button collapsed border"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                          style="font-weight: 500"
+                        >
+                          Others Vehicles Type
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="othersVehiclesTypes"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body px-1">
+                          <!-- Search box -->
+                          <div
+                            class="buy-sell-search-box position-relative mt-4"
+                          >
+                            <input
+                              type="search"
+                              name=""
+                              class="p-2 rounded-5 px-4"
+                              id=""
+                              style="position: static"
+                            />
+                            <span class="p-2 px-3 cursor-pointer"
+                              ><i class="fa-solid fa-magnifying-glass"></i
+                            ></span>
+                          </div>
+
+                          <!-- Most popular Vehicles Type -->
+                          <ul class="mt-3 popular-vehicles-type">
+                            <p class="text-capitalize" style="font-weight: 500">
+                              Most popular Vehicles Type
+                            </p>
+                            <li>Sedan</li>
+                            <li>SUV (Sport Utility Vehicle)</li>
+                            <li>Truck</li>
+                            <li>Hatchback</li>
+                            <li>Crossover</li>
+                            <li>Coupe</li>
+                            <li>Convertible</li>
+                            <li>Minivan</li>
+                            <li>Van</li>
+                            <li>Motorcycle</li>
+                            <li>Electric Vehicle (EV)</li>
+                            <li>Hybrid Vehicle</li>
+                            <li>Pickup Truck</li>
+                            <li>Station Wagon</li>
+                            <li>Compact Car</li>
+                            <li>Luxury Car</li>
+                            <li>Sports Car</li>
+                            <li>RV (Recreational Vehicle)</li>
+                            <li>Bus</li>
+                            <li>ATV (All-Terrain Vehicle)</li>
+                            <li>Limousine</li>
+                            <li>3-Wheeler</li>
+                            <li>Moped</li>
+                            <li>Classic Car</li>
+                            <li>Subcompact Car</li>
+                            <li>Performance Car</li>
+                            <li>Armored Car</li>
+                            <li>Off-Road Vehicle</li>
+                            <li>Compact SUV</li>
+                            <li>Midsize SUV</li>
+                            <li>Full-Size SUV</li>
+                            <li>Compact Pickup Truck</li>
+                            <li>Full-Size Pickup Truck</li>
+                            <li>Commercial Truck</li>
+                            <li>Fire Truck</li>
+                            <li>Ambulance</li>
+                            <li>Tow Truck</li>
+                            <li>Utility Vehicle</li>
+                            <li>Compact RV</li>
+                            <li>Class A Motorhome</li>
+                            <li>Class B Motorhome</li>
+                            <li>Class C Motorhome</li>
+                            <li>Hovercraft</li>
+                            <li>Jet Ski</li>
+                            <li>Snowmobile</li>
+                            <li>Golf Cart</li>
+                            <li>Skateboard</li>
+                          </ul>
+
+                          <!-- other car title -->
+                          <div
+                            class="d-flex justify-content-center align-items-center w-100 border mt-3"
+                          >
+                            <label
+                              class="w-50 p-2 text-center"
+                              for="vehiclesType"
+                              >Others</label
+                            >
+                            <input
+                              class="w-50 p-2"
+                              id="vehiclesType"
+                              type="text"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <!-- next button -->
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
+                  </div>
+
+                  <div class="text-end mt-3">
+                    <button class="next-btn" style="color: #ddd">
+                      Next <img src="../images/logo/next-1.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="form-step" data-step="4">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span>
+                        <img
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
+                          style="width: 25px"
+                          class="cursor-pointer"
+                          id="backBtn"
+                        />
+                      </span>
+                      <span class="d-inline-block ml-2" style="color: #dddd">
+                        Vehicles Brand
+                      </span>
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
                     </div>
                   </div>
 
-                  <!-- Step 10 -->
-                  <div class="form-step" data-step="10">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
+                  <p class="py-3" style="font-weight: 500">Choose your brand</p>
+
+                  <div class="row">
+                    <div class="col-4">
+                      <!-- sedan -->
+                      <div class="cursor-pointer text-center d-inline-block">
+                        <div class="position-relative">
                           <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
+                            src="../images/logo/toyota-logos-brands-logotypes-0 1.png"
+                            alt="car"
+                            style="background: #d9d9d9"
+                            class="rounded-3 d-inline-block px-5 mx-2 py-3"
                           />
-                        </span>
-                        <span style="color: #dddd">Engine Capacity</span>
-                      </div>
 
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
+                          <span class="car-type d-block" style="font-size: 16px"
+                            >Toyota</span
+                          >
+                        </div>
                       </div>
                     </div>
-                    <!-- Engine Capacity (CC): -->
-                    <div
-                      class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
-                    >
-                      <label class="w-50 text-center" for="engineCapacity"
-                        >Engine Capacity</label
+                    <div class="col-4">
+                      <!-- sedan -->
+                      <div class="cursor-pointer text-center d-inline-block">
+                        <div class="position-relative">
+                          <img
+                            src="../images/logo/png-transparent-honda-logo-1.png"
+                            alt="car"
+                            style="background: #d9d9d9"
+                            class="rounded-3 d-inline-block px-5 mx-2 py-3"
+                          />
+                          <span class="car-type d-block" style="font-size: 16px"
+                            >Honda</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <!-- Nissan -->
+                      <div
+                        class="position-relative cursor-pointer text-center d-inline-block"
                       >
-                      <input
-                        class="w-50 px-2"
-                        type="text"
-                        id="engineCapacity"
-                        placeholder="Write CC"
-                      />
-                    </div>
-
-                    <!-- next button -->
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
+                        <img
+                          src="../images/logo/Nissan_logo-1.png"
+                          alt="car"
+                          style="background: #d9d9d9"
+                          class="rounded-3 d-inline-block px-5 mx-2 py-3"
+                        />
+                        <span class="car-type d-block" style="font-size: 16px"
+                          >Nissan</span
+                        >
+                      </div>
                     </div>
                   </div>
 
-                  <!-- Step 11 -->
-                  <div class="form-step" data-step="11">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
+                  <div class="row mt-4">
+                    <div class="col-4">
+                      <!-- Hyundai -->
+                      <div class="cursor-pointer text-center d-inline-block">
+                        <div class="position-relative">
                           <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
+                            src="../images/logo/hyundai-1.png"
+                            alt="car"
+                            style="background: #d9d9d9"
+                            class="rounded-3 d-inline-block px-5 mx-2 py-3"
                           />
-                        </span>
-                        <span style="color: #dddd">Engine Capacity</span>
-                      </div>
 
-                      <div class="">
-                        <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
-                          style="width: 25px"
-                          class="cursor-pointer"
-                        />
+                          <span class="car-type d-block" style="font-size: 16px"
+                            >Hyundai</span
+                          >
+                        </div>
                       </div>
                     </div>
-                    <!-- Engine Capacity (CC): -->
-                    <div
-                      class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
-                    >
-                      <label class="w-50 text-center" for="kilometersRun"
-                        >Kilometres Run</label
+                    <div class="col-4">
+                      <!-- KIA -->
+                      <div class="cursor-pointer text-center d-inline-block">
+                        <div class="position-relative">
+                          <img
+                            src="../images/logo/Kia-logo-1.png"
+                            alt="car"
+                            style="background: #d9d9d9"
+                            class="rounded-3 d-inline-block px-5 mx-2 py-3"
+                          />
+                          <span class="car-type d-block" style="font-size: 16px"
+                            >KIA</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <!-- Mitsubishi -->
+                      <div
+                        class="position-relative cursor-pointer text-center d-inline-block"
                       >
-                      <input
-                        class="w-50 px-2"
-                        type="text"
-                        id="kilometersRun"
-                        placeholder="Write KH"
-                      />
-                    </div>
-
-                    <!-- next button -->
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
+                        <img
+                          src="../images/logo/Mitsubishi-logo-1.png"
+                          alt="car"
+                          style="background: #d9d9d9"
+                          class="rounded-3 d-inline-block px-5 mx-2 py-3"
+                        />
+                        <span class="car-type d-block" style="font-size: 16px"
+                          >Mitsubishi</span
+                        >
+                      </div>
                     </div>
                   </div>
 
-                  <!-- Step 12 -->
-                  <div class="form-step" data-step="12">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Price (TK)</span>
-                      </div>
+                  <!-- others Vehicles brand -->
+                  <div
+                    class="accordion accordion-flush mt-3"
+                    id="accordionFlushExample"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="othersVehiclesBrands">
+                        <button
+                          class="accordion-button collapsed border"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                          style="font-weight: 500"
+                        >
+                          Others Vehicles Brands
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="othersVehiclesBrands"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body px-1">
+                          <!-- Search box -->
+                          <div
+                            class="buy-sell-search-box position-relative mt-4"
+                          >
+                            <input
+                              type="search"
+                              name=""
+                              class="p-2 rounded-5 px-4"
+                              id=""
+                              style="position: static"
+                            />
+                            <span class="p-2 px-3 cursor-pointer"
+                              ><i class="fa-solid fa-magnifying-glass"></i
+                            ></span>
+                          </div>
 
-                      <div class="">
+                          <!-- Most popular Vehicles Type -->
+                          <ul class="mt-3 popular-vehicles-type">
+                            <p class="text-capitalize" style="font-weight: 500">
+                              Most popular Vehicles Brand
+                            </p>
+                            <li>Toyota</li>
+                            <li>Volkswagen</li>
+                            <li>Ford</li>
+                            <li>Chevrolet</li>
+                            <li>Honda</li>
+                            <li>Nissan</li>
+                            <li>BMW</li>
+                            <li>Mercedes-Benz</li>
+                            <li>Audi</li>
+                            <li>Hyundai</li>
+                            <li>Kia</li>
+                            <li>Volvo</li>
+                            <li>Subaru</li>
+                            <li>Mazda</li>
+                            <li>Jeep</li>
+                            <li>Lexus</li>
+                            <li>Porsche</li>
+                            <li>Land Rover</li>
+                            <li>Jaguar</li>
+                            <li>Tesla</li>
+                            <li>Ferrari</li>
+                            <li>Lamborghini</li>
+                            <li>Rolls-Royce</li>
+                            <li>Bentley</li>
+                            <li>Cadillac</li>
+                            <li>Infiniti</li>
+                            <li>Acura</li>
+                            <li>Alfa Romeo</li>
+                            <li>Maserati</li>
+                            <li>Mini</li>
+                            <li>Buick</li>
+                            <li>GMC</li>
+                            <li>Chrysler</li>
+                            <li>Dodge</li>
+                            <li>RAM</li>
+                            <li>Subaru</li>
+                            <li>Lincoln</li>
+                            <li>Smart</li>
+                            <li>Suzuki</li>
+                            <li>Maybach</li>
+                            <li>Genesis</li>
+                            <li>McLaren</li>
+                            <li>Lotus</li>
+                            <li>Aston Martin</li>
+                            <li>Bugatti</li>
+                            <li>Koenigsegg</li>
+                          </ul>
+
+                          <!-- other car title -->
+                          <div
+                            class="d-flex justify-content-center align-items-center w-100 border mt-3"
+                          >
+                            <label
+                              class="w-50 p-2 text-center"
+                              for="vehiclesBrands"
+                              >Others Brand</label
+                            >
+                            <input
+                              class="w-50 p-2"
+                              id="vehiclesBrands"
+                              type="text"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-end mt-3">
+                    <button class="next-btn" style="color: #ddd">
+                      Next <img src="../images/logo/next-1.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="form-step" data-step="5">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span>
                         <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
                           style="width: 25px"
                           class="cursor-pointer"
+                          id="backBtn"
                         />
-                      </div>
+                      </span>
+                      <span class="d-inline-block ml-2" style="color: #dddd">
+                        Vehicles Title
+                      </span>
                     </div>
-                    <!-- Price (TK): -->
-                    <div
-                      class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
-                    >
-                      <label class="w-50 text-center" for="price"
-                        >Price (TK)</label
-                      >
-                      <input
-                        class="w-50 px-2"
-                        type="text"
-                        id="price"
-                        placeholder="Enter price"
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
                       />
                     </div>
-                    <div class="text-center mt-3">
+                  </div>
+                  <p class="py-3" style="font-weight: 500">
+                    Select your vehicle title:
+                  </p>
+
+                  <div class="">
+                    <div class="d-flex justify-content-between">
+                      <span class="child p-3 vehicles-title">Corolla</span>
+                      <span class="child p-3 vehicles-title">Axio</span>
+                      <span class="child p-3 vehicles-title">Allion</span>
+                    </div>
+
+                    <!-- row 2 -->
+                    <div class="d-flex justify-content-between">
+                      <span class="child p-3 vehicles-title">Premio</span>
+                      <span class="child p-3 vehicles-title">Seloon</span>
+                      <span class="child p-3 vehicles-title">Hiace</span>
+                    </div>
+
+                    <!-- row 3 -->
+                    <div class="d-flex justify-content-between">
+                      <span class="child p-3 vehicles-title">Premio</span>
+                      <span class="child p-3 vehicles-title">Noha</span>
+                      <span class="child p-3 vehicles-title">Hiace</span>
+                    </div>
+                  </div>
+
+                  <!-- others Vehicles brand -->
+                  <div
+                    class="accordion accordion-flush mt-3"
+                    id="accordionFlushExample"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="othersVehiclesBrands">
+                        <button
+                          class="accordion-button collapsed border"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseOne"
+                          style="font-weight: 500"
+                        >
+                          Others Vehicles Title
+                        </button>
+                      </h2>
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="othersVehiclesBrands"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body px-1">
+                          <!-- Search box -->
+                          <div
+                            class="buy-sell-search-box position-relative mt-4"
+                          >
+                            <input
+                              type="search"
+                              name=""
+                              class="p-2 rounded-5 px-4"
+                              id=""
+                              style="position: static"
+                            />
+                            <span class="p-2 px-3 cursor-pointer"
+                              ><i class="fa-solid fa-magnifying-glass"></i
+                            ></span>
+                          </div>
+
+                          <!-- Most popular Vehicles Type -->
+                          <ul class="mt-3 popular-vehicles-type">
+                            <p class="text-capitalize" style="font-weight: 500">
+                              Most popular Vehicles title
+                            </p>
+                            <li>Toyota</li>
+                            <li>Volkswagen</li>
+                            <li>Ford</li>
+                            <li>Chevrolet</li>
+                            <li>Honda</li>
+                            <li>Nissan</li>
+                            <li>BMW</li>
+                            <li>Mercedes-Benz</li>
+                            <li>Audi</li>
+                            <li>Hyundai</li>
+                            <li>Kia</li>
+                            <li>Volvo</li>
+                            <li>Subaru</li>
+                            <li>Mazda</li>
+                            <li>Jeep</li>
+                            <li>Lexus</li>
+                            <li>Porsche</li>
+                            <li>Land Rover</li>
+                            <li>Jaguar</li>
+                            <li>Tesla</li>
+                            <li>Ferrari</li>
+                            <li>Lamborghini</li>
+                            <li>Rolls-Royce</li>
+                            <li>Bentley</li>
+                            <li>Cadillac</li>
+                            <li>Infiniti</li>
+                            <li>Acura</li>
+                            <li>Alfa Romeo</li>
+                            <li>Maserati</li>
+                            <li>Mini</li>
+                            <li>Buick</li>
+                            <li>GMC</li>
+                            <li>Chrysler</li>
+                            <li>Dodge</li>
+                            <li>RAM</li>
+                            <li>Subaru</li>
+                            <li>Lincoln</li>
+                            <li>Smart</li>
+                            <li>Suzuki</li>
+                            <li>Maybach</li>
+                            <li>Genesis</li>
+                            <li>McLaren</li>
+                            <li>Lotus</li>
+                            <li>Aston Martin</li>
+                            <li>Bugatti</li>
+                            <li>Koenigsegg</li>
+                          </ul>
+
+                          <!-- other car title -->
+                          <div
+                            class="d-flex justify-content-center align-items-center w-100 border mt-3"
+                          >
+                            <label
+                              class="w-50 p-2 text-center"
+                              for="vehiclesBrands"
+                              >Others Brand</label
+                            >
+                            <input
+                              class="w-50 p-2"
+                              id="vehiclesBrands"
+                              type="text"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-end mt-3">
+                    <button class="next-btn" style="color: #ddd">
+                      Next <img src="../images/logo/next-1.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="form-step" data-step="6">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span>
+                        <img
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
+                          style="width: 25px"
+                          class="cursor-pointer"
+                          id="backBtn"
+                        />
+                      </span>
+                      <span class="d-inline-block ml-2" style="color: #dddd"
+                        >Manufacture Year & Registration Year</span
+                      >
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Manufacture Year -->
+                  <div class="year-picker mt-3">
+                    <input
+                      type="text"
+                      id="yearInput1"
+                      class="w-100 rounded-2"
+                      placeholder="Manufacture Year"
+                    />
+                    <ul class="year-list"></ul>
+                  </div>
+
+                  <!-- Registration Year -->
+                  <div class="year-picker mt-3">
+                    <input
+                      type="text"
+                      id="yearInput2"
+                      class="w-100 rounded-2"
+                      placeholder="Registration Year"
+                    />
+                    <ul class="year-list"></ul>
+                  </div>
+
+                  <!-- next button -->
+                  <div class="text-end mt-3">
+                    <button class="next-btn" style="color: #ddd">
+                      Next <img src="../images/logo/next-1.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="form-step" data-step="7">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span>
+                        <img
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
+                          style="width: 25px"
+                          class="cursor-pointer"
+                          id="backBtn"
+                        />
+                      </span>
+                      <span class="d-inline-block ml-2" style="color: #dddd"
+                        >Fuel Types</span
+                      >
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                  <p class="py-3" style="font-weight: 500">Fuel Types:</p>
+
+                  <div class="fuel-types">
+                    <div class="mt-2">
                       <input
                         type="checkbox"
                         class="checkbox"
-                        onclick="collectCheckboxValues()"
-                        value="Negotiable"
-                        id="negotiable"
-                        name="negotiable"
+                        value="petrol"
+                        id="petrol"
+                        name="fuel-type"
                       />
-                      <label for="negotiable">Negotiable</label><br />
-
-                      <p
-                        class="fs-5 text-center p-3 rounded-3 mt-3 mx-5"
-                        style="background: #fee45c"
-                      >
-                        The car is priced like your car <br />
-                        [Tk. 15,50,000 - Tk. 17,50000]
-                      </p>
+                      <label for="petrol">Petrol</label><br />
                     </div>
-
-                    <!-- next button -->
-                    <div class="text-end">
-                      <button class="next-btn mt-2" style="color: #ddd">
-                        Next <img src="../images/logo/next-1.png" alt="" />
-                      </button>
+                    <div class="mt-2">
+                      <input
+                        type="checkbox"
+                        class="checkbox"
+                        value="diesel"
+                        id="diesel"
+                        name="fuel-type"
+                      />
+                      <label for="diesel">Diesel</label><br />
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        type="checkbox"
+                        class="checkbox"
+                        value="electric"
+                        id="electric"
+                        name="fuel-type"
+                      />
+                      <label for="electric">Electric</label><br />
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        type="checkbox"
+                        class="checkbox"
+                        value="hybrid"
+                        id="hybrid"
+                        name="fuel-type"
+                      />
+                      <label for="hybrid">Hybrid</label><br />
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        type="checkbox"
+                        class="checkbox"
+                        value="cng"
+                        id="cng"
+                        name="fuel-type"
+                      />
+                      <label for="cng">CNG</label><br />
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        type="checkbox"
+                        class="checkbox"
+                        value="lpg"
+                        id="lpg"
+                        name="fuel-type"
+                      />
+                      <label for="lpg">LPG</label><br />
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        type="checkbox"
+                        class="checkbox"
+                        value="biofuel"
+                        id="biofuel"
+                        name="fuel-type"
+                      />
+                      <label for="biofuel">Biofuel</label><br />
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        type="checkbox"
+                        class="checkbox"
+                        value="hydrogen"
+                        id="hydrogen"
+                        name="fuel-type"
+                      />
+                      <label for="hydrogen">Hydrogen</label><br />
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        type="checkbox"
+                        class="checkbox"
+                        value="lng"
+                        id="lng"
+                        name="fuel-type"
+                      />
+                      <label for="lng">LNG</label><br />
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        type="checkbox"
+                        class="checkbox"
+                        value="ethanol"
+                        id="ethanol"
+                        name="fuel-type"
+                      />
+                      <label for="ethanol">Ethanol</label><br />
                     </div>
                   </div>
 
-                  <!-- Final step -->
-                  <div class="form-step" data-step="13">
-                    <!-- Head title -->
-                    <div
-                      class="d-flex align-items-center p-3 rounded-3 justify-content-between"
-                      style="background-color: #4888d4"
-                    >
-                      <div class="">
-                        <span>
-                          <img
-                            src="../images/logo/back-button-1.png"
-                            alt="back"
-                            style="width: 25px"
-                            class="cursor-pointer"
-                            id="backBtn"
-                          />
-                        </span>
-                        <span style="color: #dddd">Description</span>
-                      </div>
+                  <!-- next button -->
+                  <div class="text-end">
+                    <button class="next-btn mt-2" style="color: #ddd">
+                      Next <img src="../images/logo/next-1.png" alt="" />
+                    </button>
+                  </div>
+                </div>
 
-                      <div class="">
+                <!-- Step 8 -->
+                <div class="form-step" data-step="8">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span>
                         <img
-                          src="../images/logo/x-mark-1.png"
-                          alt="close"
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
                           style="width: 25px"
                           class="cursor-pointer"
+                          id="backBtn"
                         />
+                      </span>
+                      <span style="color: #dddd" class="d-inline-block ml-2"
+                        >Transmission:</span
+                      >
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
+                    </div>
+                  </div>
+
+                  <p class="py-3" style="font-weight: 500">
+                    Tick your car Transmission:
+                  </p>
+
+                  <div class="container mt-5">
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <!-- Manual -->
+                      <div
+                        class="w-50 d-flex justify-content-center align-items-center"
+                      >
+                        <div class="w-50 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            value="manual"
+                            id="toggleAccordion"
+                            name="engine-type"
+                          />
+                          <label class="form-check-label" for="toggleAccordion"
+                            >Manual</label
+                          ><br />
+                        </div>
+                        <div class="w-50 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            value="automatic"
+                            id="automatic"
+                            name="engine-type"
+                          />
+                          <label class="form-check-label" for="automatic"
+                            >Automatic</label
+                          ><br />
+                        </div>
                       </div>
                     </div>
 
-                    <textarea
-                      id="description"
-                      placeholder="Enter your description"
-                      class="w-100 p-3 mt-3 rounded-3"
-                      style="height: 150px"
-                    ></textarea>
-
-                    <!-- next button -->
-                    <div class="text-end">
-                      <button
-                        class="next-btn mt-2"
-                        style="color: #ddd"
-                        onclick="collectFormValues()"
-                      >
-                        Submit <img src="../images/logo/next-1.png" alt="" />
-                      </button>
+                    <!-- manual -->
+                    <div
+                      class="accordion accordion-flush border"
+                      id="myAccordion"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne"
+                          >
+                            Automatic engin body
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseOne"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingOne"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="engin-body-types">
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="petrol"
+                                  id="petrol-1"
+                                  name="fuel-type"
+                                />
+                                <label for="petrol-1">Petrol</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="diesel"
+                                  id="diesel-2"
+                                  name="fuel-type"
+                                />
+                                <label for="diesel-2">Diesel</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="electric"
+                                  id="electric-3"
+                                  name="fuel-type"
+                                />
+                                <label for="electric-3">Electric</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="hybrid"
+                                  id="hybrid-4"
+                                  name="fuel-type"
+                                />
+                                <label for="hybrid-4">Hybrid</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="cng"
+                                  id="cng-5"
+                                  name="fuel-type"
+                                />
+                                <label for="cng-5">CNG</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="lpg"
+                                  id="lpg-6"
+                                  name="fuel-type"
+                                />
+                                <label for="lpg-6">LPG</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="biofuel"
+                                  id="biofuel-7"
+                                  name="fuel-type"
+                                />
+                                <label for="biofuel-7">Biofuel</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="hydrogen"
+                                  id="hydrogen-8"
+                                  name="fuel-type"
+                                />
+                                <label for="hydrogen-8">Hydrogen</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="lng"
+                                  id="lng-9"
+                                  name="fuel-type"
+                                />
+                                <label for="lng-9">LNG</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="ethanol"
+                                  id="ethanol-10"
+                                  name="fuel-type"
+                                />
+                                <label for="ethanol-10">Ethanol</label><br />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+
+                    <!-- automatic -->
+                    <div
+                      class="accordion accordion-flush border"
+                      id="myAccordion2"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseTwo"
+                          >
+                            Automatic engin body
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseTwo"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingTwo"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            <div class="engin-body-types">
+                              <!-- Group 1 -->
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="petrol"
+                                  id="set1-petrol"
+                                  name="fuel-type"
+                                />
+                                <label for="set1-petrol">Petrol</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="diesel"
+                                  id="set1-diesel"
+                                  name="fuel-type"
+                                />
+                                <label for="set1-diesel">Diesel</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="electric"
+                                  id="set1-electric"
+                                  name="fuel-type"
+                                />
+                                <label for="set1-electric">Electric</label
+                                ><br />
+                              </div>
+
+                              <!-- Group 2 -->
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="petrol"
+                                  id="set2-petrol"
+                                  name="fuel-type"
+                                />
+                                <label for="set2-petrol">Petrol</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="diesel"
+                                  id="set2-diesel"
+                                  name="fuel-type"
+                                />
+                                <label for="set2-diesel">Diesel</label><br />
+                              </div>
+                              <div class="mt-2">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  value="electric"
+                                  id="set2-electric"
+                                  name="fuel-type"
+                                />
+                                <label for="set2-electric">Electric</label
+                                ><br />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- next button -->
+                  <div class="text-end">
+                    <button class="next-btn mt-2" style="color: #ddd">
+                      Next <img src="../images/logo/next-1.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Step 9 -->
+                <div class="form-step" data-step="9">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span>
+                        <img
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
+                          style="width: 25px"
+                          class="cursor-pointer"
+                          id="backBtn"
+                        />
+                      </span>
+                      <span class="ml-2 d-inline-block" style="color: #dddd"
+                        >Engine Capacity</span
+                      >
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                  <!-- Engine Capacity (CC): -->
+                  <div
+                    class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
+                  >
+                    <input
+                      class="w-100 px-2 input-fields"
+                      type="text"
+                      id="engineCapacity"
+                      placeholder="Engine Capacity"
+                    />
+                  </div>
+                  <div
+                    class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
+                  >
+                    <input
+                      class="w-100 px-2 input-fields"
+                      type="text"
+                      id="kilometersRun"
+                      placeholder="Kilometres Run"
+                    />
+                  </div>
+
+                  <!-- next button -->
+                  <div class="text-end">
+                    <button class="next-btn mt-2" style="color: #ddd">
+                      Next <img src="../images/logo/next-1.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Step 10 -->
+                <div class="form-step" data-step="10">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span>
+                        <img
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
+                          style="width: 25px"
+                          class="cursor-pointer"
+                          id="backBtn"
+                        />
+                      </span>
+                      <span class="d-inline-block ml-2" style="color: #dddd"
+                        >Price (TK)</span
+                      >
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                  <!-- Price (TK): -->
+                  <div
+                    class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
+                  >
+                    <input
+                      class="w-100 px-2 input-fields"
+                      type="text"
+                      id="price"
+                      placeholder="Enter price"
+                    />
+                  </div>
+                  <div class="text-start mt-3">
+                    <input
+                      type="checkbox"
+                      class="checkbox"
+                      value="Negotiable"
+                      id="negotiable"
+                      name="negotiable"
+                    />
+                    <label for="negotiable">Negotiable</label><br />
+
+                    <p
+                      class="fs-5 text-center p-3 rounded-3 mt-3 mx-5"
+                      style="background: #fee45c"
+                    >
+                      The car is priced like your car <br />
+                      [Tk. 15,50,000 - Tk. 17,50000]
+                    </p>
+                  </div>
+
+                  <!-- next button -->
+                  <div class="text-end">
+                    <button class="next-btn mt-2" style="color: #ddd">
+                      Next <img src="../images/logo/next-1.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Final step -->
+                <div class="form-step" data-step="11">
+                  <!-- Head title -->
+                  <div
+                    class="d-flex align-items-center p-3 rounded-3 justify-content-between"
+                    style="background-color: #4888d4"
+                  >
+                    <div class="">
+                      <span>
+                        <img
+                          src="../images/logo/back-button-1.png"
+                          alt="back"
+                          style="width: 25px"
+                          class="cursor-pointer"
+                          id="backBtn"
+                        />
+                      </span>
+                      <span style="color: #dddd">Description</span>
+                    </div>
+
+                    <div class="">
+                      <img
+                        src="../images/logo/x-mark-1.png"
+                        alt="close"
+                        style="width: 25px"
+                        class="cursor-pointer"
+                      />
+                    </div>
+                  </div>
+
+                  <textarea
+                    id="description"
+                    placeholder="Enter your description"
+                    class="w-100 p-3 mt-3 rounded-3"
+                    style="height: 150px"
+                  ></textarea>
+
+                  <!-- next button -->
+                  <div class="text-end">
+                    <button class="next-btn mt-2" style="color: #ddd">
+                      Submit <img src="../images/logo/next-1.png" alt="" />
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1301,6 +2184,7 @@
     </div>
 
     <!-- Bootstrap JS CDN calling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -1311,7 +2195,13 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
+
+    <!-- start info -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- end slider info -->
+    <script src="../js/appSlider.js"></script>
     <!-- muthoCar-multiple-form -->
+    <script src="../js/ManufactureAndRegYears.js"></script>
     <script src="../js/muthoCar-multiple-form.js"></script>
     <!-- our script -->
     <script src="../js/script.js"></script>

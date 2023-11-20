@@ -78,3 +78,101 @@ button {
   top: 0;
   left: 0;
 }
+
+.popular-vehicles-type li {
+  line-height: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.popular-vehicles-type li:hover {
+  padding-left: 5px !important;
+}
+
+.year-picker {
+  position: relative;
+}
+
+.input-fields,
+.year-picker input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.year-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1; /* Ensure the dropdown is above other elements */
+}
+
+.year-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.year-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* fuel types */
+.fuel-types {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.checkbox {
+  margin-right: 5px;
+}
+
+label {
+  font-size: 16px;
+}
+
+/* Optional: Add some styling for better visibility when hovering over checkboxes */
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.checkbox:checked + label {
+  font-weight: bold;
+  color: #1e90ff; /* Change color to your preference */
+}
+
+div#myAccordion2,
+div#myAccordion {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 5 !important;
+}
+
+#myAccordion.show,
+#myAccordion2.show {
+  visibility: visible !important;
+  display: block !important;
+  opacity: 1 !important;
+  margin: 10px 0;
+  z-index: 5;
+  position: relative;
+}
+
+/* .form-step {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+} */
