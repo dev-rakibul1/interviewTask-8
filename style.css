@@ -743,7 +743,7 @@ article.car-article li strong {
 /*                          Driver 2 page styling
 /*========================================================================== */
 
-span.select2-selection.select2-selection--single {
+/* span.select2-selection.select2-selection--single {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -781,7 +781,7 @@ span.select2-selection__arrow {
   .select2-selection__arrow
   b {
   border-color: transparent transparent #000 transparent;
-}
+} */
 /* ==========================================================================*/
 /*                          Iphone 2 page styling
 /*========================================================================== */

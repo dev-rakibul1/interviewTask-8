@@ -19,6 +19,11 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!-- select2 box  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
     <!-- slick slider -->
     <link
       rel="stylesheet"
@@ -538,18 +543,25 @@
                               </div>
 
                               <!-- other car title -->
+
                               <div
-                                class="d-flex justify-content-center align-items-center w-100 border mt-3"
+                                class="year-picker mt-3 d-flex justify-content-center align-items-center border"
+                                style="
+                                  border: 1px solid #ddd !important;
+                                  border-radius: 5px;
+                                "
                               >
                                 <label
-                                  class="w-50 p-2 text-center"
                                   for="carOthers"
+                                  class="w-50 labelRegistrationYear"
                                   >Others Catagories</label
                                 >
                                 <input
-                                  class="w-50 p-2"
-                                  id="carOthers"
                                   type="text"
+                                  id="carOthers"
+                                  class="w-50 border-0"
+                                  placeholder="Others Catagories
+                                "
                                 />
                               </div>
                             </div>
@@ -972,18 +984,25 @@
                           </ul>
 
                           <!-- other car title -->
+
                           <div
-                            class="d-flex justify-content-center align-items-center w-100 border mt-3"
+                            class="year-picker mt-3 d-flex justify-content-center align-items-center border"
+                            style="
+                              border: 1px solid #ddd !important;
+                              border-radius: 5px;
+                            "
                           >
                             <label
-                              class="w-50 p-2 text-center"
                               for="vehiclesType"
-                              >Others</label
+                              class="w-50 labelRegistrationYear"
+                              >Others Catagories</label
                             >
                             <input
-                              class="w-50 p-2"
-                              id="vehiclesType"
                               type="text"
+                              id="vehiclesType"
+                              class="w-50 border-0"
+                              placeholder="Others Catagories
+                            "
                             />
                           </div>
                         </div>
@@ -1235,17 +1254,23 @@
 
                           <!-- other car title -->
                           <div
-                            class="d-flex justify-content-center align-items-center w-100 border mt-3"
+                            class="year-picker mt-3 d-flex justify-content-center align-items-center border"
+                            style="
+                              border: 1px solid #ddd !important;
+                              border-radius: 5px;
+                            "
                           >
                             <label
-                              class="w-50 p-2 text-center"
                               for="vehiclesBrands"
+                              class="w-50 labelRegistrationYear"
                               >Others Brand</label
                             >
                             <input
-                              class="w-50 p-2"
-                              id="vehiclesBrands"
                               type="text"
+                              id="vehiclesBrands"
+                              class="w-50 border-0"
+                              placeholder="Others Brand
+                            "
                             />
                           </div>
                         </div>
@@ -1416,17 +1441,23 @@
 
                           <!-- other car title -->
                           <div
-                            class="d-flex justify-content-center align-items-center w-100 border mt-3"
+                            class="year-picker mt-3 d-flex justify-content-center align-items-center border"
+                            style="
+                              border: 1px solid #ddd !important;
+                              border-radius: 5px;
+                            "
                           >
                             <label
-                              class="w-50 p-2 text-center"
                               for="vehiclesBrands"
-                              >Others Brand</label
+                              class="w-50 labelRegistrationYear"
+                              >Others title</label
                             >
                             <input
-                              class="w-50 p-2"
-                              id="vehiclesBrands"
                               type="text"
+                              id="vehiclesBrands"
+                              class="w-50 border-0"
+                              placeholder="Engine Capacity (CC)
+                            "
                             />
                           </div>
                         </div>
@@ -1476,25 +1507,45 @@
                   </div>
 
                   <!-- Manufacture Year -->
-                  <div class="year-picker mt-3">
-                    <input
-                      type="text"
-                      id="yearInput1"
-                      class="w-100 rounded-2"
-                      placeholder="Manufacture Year"
-                    />
-                    <ul class="year-list"></ul>
+                  <div
+                    class="year-picker mt-3 d-flex justify-content-center align-items-center border"
+                    style="
+                      border: 1px solid #ddd !important;
+                      border-radius: 5px;
+                    "
+                  >
+                    <label
+                      for="manufactureYear"
+                      class="w-50 labelRegistrationYear"
+                      >Manufacture Year</label
+                    >
+                    <select
+                      id="manufactureYear"
+                      class="manufactureYear w-50 border-0"
+                      name="states[]"
+                      multiple="multiple"
+                    ></select>
                   </div>
 
                   <!-- Registration Year -->
-                  <div class="year-picker mt-3">
-                    <input
-                      type="text"
-                      id="yearInput2"
-                      class="w-100 rounded-2"
-                      placeholder="Registration Year"
-                    />
-                    <ul class="year-list"></ul>
+                  <div
+                    class="year-picker mt-3 d-flex justify-content-center align-items-center border"
+                    style="
+                      border: 1px solid #ddd !important;
+                      border-radius: 5px;
+                    "
+                  >
+                    <label
+                      for="registrationYear"
+                      class="w-50 labelRegistrationYear"
+                      >Registration Year</label
+                    >
+                    <select
+                      id="registrationYear"
+                      class="registrationYear w-50 border-0"
+                      name="states[]"
+                      multiple="multiple"
+                    ></select>
                   </div>
 
                   <!-- next button -->
@@ -1996,23 +2047,44 @@
                     </div>
                   </div>
                   <!-- Engine Capacity (CC): -->
+
                   <div
-                    class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
+                    class="year-picker mt-3 d-flex justify-content-center align-items-center border"
+                    style="
+                      border: 1px solid #ddd !important;
+                      border-radius: 5px;
+                    "
                   >
+                    <label
+                      for="engineCapacity"
+                      class="w-50 labelRegistrationYear"
+                      >Engine Capacity (CC)</label
+                    >
                     <input
-                      class="w-100 px-2 input-fields"
                       type="text"
                       id="engineCapacity"
-                      placeholder="Engine Capacity"
+                      class="w-50 border-0"
+                      placeholder="Engine Capacity (CC)
+                      "
                     />
                   </div>
+
                   <div
-                    class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
+                    class="year-picker mt-3 d-flex justify-content-center align-items-center border"
+                    style="
+                      border: 1px solid #ddd !important;
+                      border-radius: 5px;
+                    "
                   >
+                    <label
+                      for="kilometersRun"
+                      class="w-50 labelRegistrationYear"
+                      >Kilometres Run</label
+                    >
                     <input
-                      class="w-100 px-2 input-fields"
                       type="text"
                       id="kilometersRun"
+                      class="w-50 border-0"
                       placeholder="Kilometres Run"
                     />
                   </div>
@@ -2059,16 +2131,25 @@
                     </div>
                   </div>
                   <!-- Price (TK): -->
+
                   <div
-                    class="d-flex justify-content-center align-items-center w-100 border mt-3 rounded-2"
+                    class="year-picker mt-3 d-flex justify-content-center align-items-center border"
+                    style="
+                      border: 1px solid #ddd !important;
+                      border-radius: 5px;
+                    "
                   >
+                    <label for="price" class="w-50 labelRegistrationYear"
+                      >Price</label
+                    >
                     <input
-                      class="w-100 px-2 input-fields"
                       type="text"
                       id="price"
+                      class="w-50 border-0"
                       placeholder="Enter price"
                     />
                   </div>
+
                   <div class="text-start mt-3">
                     <input
                       type="checkbox"
@@ -2200,6 +2281,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- end slider info -->
     <script src="../js/appSlider.js"></script>
+    <!-- select box js -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <!-- muthoCar-multiple-form -->
     <script src="../js/ManufactureAndRegYears.js"></script>
     <script src="../js/muthoCar-multiple-form.js"></script>

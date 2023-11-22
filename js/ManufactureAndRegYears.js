@@ -1,78 +1,81 @@
 $(document).ready(function () {
-    // Year Picker 1
-    const yearInput1 = $('#yearInput1');
-    const yearList1 = yearInput1.next('.year-list');
+    const currentYear = new Date().getFullYear();
+    const startYear = 1900;
+    const endYear = 2023;
 
-    // Populate year list for Year Picker 1
-    for (let year = new Date().getFullYear(); year >= 1950; year--) {
-        yearList1.append(`<li>${year}</li>`);
+    const $yearSelect = $('.manufactureYear');
+
+    for (let year = endYear; year >= startYear; year--) {
+        $yearSelect.append('<option value="' + year + '">' + year + '</option>');
     }
 
-    // Show/hide year list for Year Picker 1
-    yearInput1.click(function () {
-        yearList1.toggle();
+    $yearSelect.select2({
+        width: '100%',
+        placeholder: "Manufacture Year"
     });
+});
 
-    // Select year for Year Picker 1
-    yearList1.on('click', 'li', function () {
-        const selectedYear = $(this).text();
-        yearInput1.val(selectedYear);
-        yearList1.hide();
-    });
+$(document).ready(function () {
+    const currentYear = new Date().getFullYear();
+    const startYear = 1900;
+    const endYear = 2023;
 
-    // Close year list when clicking outside for Year Picker 1
-    $(document).mouseup(function (e) {
-        if (!yearInput1.is(e.target) && !yearList1.is(e.target) && yearList1.has(e.target).length === 0) {
-            yearList1.hide();
-        }
-    });
+    const $yearSelect = $('.registrationYear');
 
-    // Year Picker 2
-    const yearInput2 = $('#yearInput2');
-    const yearList2 = yearInput2.next('.year-list');
-
-    // Populate year list for Year Picker 2
-    for (let year = new Date().getFullYear(); year >= 1950; year--) {
-        yearList2.append(`<li>${year}</li>`);
+    for (let year = endYear; year >= startYear; year--) {
+        $yearSelect.append('<option value="' + year + '">' + year + '</option>');
     }
 
-    // Show/hide year list for Year Picker 2
-    yearInput2.click(function () {
-        yearList2.toggle();
+    $yearSelect.select2({
+        width: '100%',
+        placeholder: "Registration Year"
     });
+});
 
-    // Select year for Year Picker 2
-    yearList2.on('click', 'li', function () {
-        const selectedYear = $(this).text();
-        yearInput2.val(selectedYear);
-        yearList2.hide();
-    });
+$(document).ready(function () {
+    const currentYear = new Date().getFullYear();
+    const startYear = 1900;
+    const endYear = 2023;
 
-    // Close year list when clicking outside for Year Picker 2
-    $(document).mouseup(function (e) {
-        if (!yearInput2.is(e.target) && !yearList2.is(e.target) && yearList2.has(e.target).length === 0) {
-            yearList2.hide();
-        }
+    const $yearSelect = $('.popup-filter-search');
+
+    for (let year = endYear; year >= startYear; year--) {
+        $yearSelect.append('<option value="' + year + '">' + year + '</option>');
+    }
+
+    $yearSelect.select2({
+        width: '100%',
+        placeholder: "Registration Year"
     });
 });
 
 
 
+
+// In your Javascript (external .js resource or <script> tag)
+// $(document).ready(function () {
+//     $('.popup-filter-search').select2({
+//         placeholder: "Select a state",
+//         width: '100%', // Set the width to 100%
+//     });
+// });
+
+
 document
     .getElementById("toggleAccordion")
     .addEventListener("change", function () {
-        var accordion = document.getElementById("myAccordion");
+        const accordion = document.getElementById("myAccordion");
         accordion.classList.toggle("show", this.checked);
     });
 
 document
     .getElementById("automatic")
     .addEventListener("change", function () {
-        var accordion = document.getElementById("myAccordion2");
+        const accordion = document.getElementById("myAccordion2");
         accordion.classList.toggle("show", this.checked);
     });
 
-var checkboxes = document.querySelectorAll('input[name="engine-type"]');
+const checkboxes = document.querySelectorAll('input[name="engine-type"]');
 
 checkboxes.forEach(function (checkbox) {
     checkbox.addEventListener("change", function () {
